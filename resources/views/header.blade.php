@@ -79,21 +79,44 @@
                    <div class="header-right-block">
                        <ul>
                            <li>
-                               <div class="user-icon-block">
-                                   <div class="user-icon"><i class="flaticon-user"></i></div>
-                                   <div class="user-dtl">
-                                       <span>Sign In</span>
-                                       <h6 class="user-title">Account</h6>
-                                   </div>
-                               </div>
+                               @auth
+                                   <a href="{{ route('dashboard') }}" class="user-icon-block">
+                                       <div class="user-icon">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                               stroke-linecap="round" stroke-linejoin="round">
+                                               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                               <circle cx="12" cy="7" r="4"></circle>
+                                           </svg>
+                                       </div>
+                                       <div class="user-dtl">
+                                           <span>Welcome</span>
+                                           <h6 class="user-title">Dashboard</h6>
+                                       </div>
+                                   </a>
+                               @else
+                                   <a href="{{ route('login') }}" class="user-icon-block">
+                                       <div class="user-icon"><i class="flaticon-user"></i></div>
+                                       <div class="user-dtl">
+                                           <span>Sign In</span>
+                                           <h6 class="user-title">Account</h6>
+                                       </div>
+                                   </a>
+                               @endauth
                            </li>
-                           <li class="wishlist-icon-block"><a href="wishlist.html" title=""><i
-                                       class="flaticon-love"></i><span class="icon-badge">1</span></a></li>
+                           <li class="wishlist-icon-block">
+                               <a href="wishlist.html" title="">
+                                   <i class="flaticon-love"></i>
+                                   <span class="icon-badge">1</span>
+                               </a>
+                           </li>
                            <li>
                                <a href="cart.html" title="">
                                    <div class="cart-icon-block">
-                                       <div class="cart-icon"><i class="flaticon-shopping-cart"></i><span
-                                               class="icon-badge">0</span></div>
+                                       <div class="cart-icon">
+                                           <i class="flaticon-shopping-cart"></i>
+                                           <span class="icon-badge">0</span>
+                                       </div>
                                        <div class="cart-dtl">
                                            <span>Total</span>
                                            <h6 class="cart-price">$0.00</h6>
@@ -259,7 +282,24 @@
                        </div>
                    </div>
                    <div class="col">
-                       <div class="user-icon"><i class="flaticon-user"></i></div>
+                       @auth
+                           <a href="{{ route('dashboard') }}">
+                               <div class="user-icon">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                       viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                       stroke-linecap="round" stroke-linejoin="round">
+                                       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                       <circle cx="12" cy="7" r="4"></circle>
+                                   </svg>
+                               </div>
+                           </a>
+                       @else
+                           <a href="{{ route('login') }}">
+                               <div class="user-icon">
+                                   <i class="flaticon-user"></i>
+                               </div>
+                           </a>
+                       @endauth
                    </div>
                </div>
            </div>

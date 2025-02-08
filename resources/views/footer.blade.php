@@ -32,7 +32,7 @@
                                      <li><a href="/shop" title="">Shop</a></li>
                                      <li><a href="/contact" title="">Talk to Us</a></li>
                                      <li><a href="/faqs" title="">Faqs</a></li>
-                                     <li><a href="/policy" title="">Terms and Conditions</a></li>
+
                                  </ul>
                              </div>
                          </div>
@@ -41,7 +41,9 @@
                              <div class="footer-widget">
                                  <h3 class="footer-widget-heading">Quick Links</h3>
                                  <ul class="footer-menu">
-                                     <li><a href="/faqs" title="">Faqs</a></li>
+                                     <li><a href="/login" title="">Login</a></li>
+                                     <li><a href="/register" title="">Register</a></li>
+
                                      <li><a href="/policy" title="">Terms and Conditions</a></li>
                                  </ul>
                              </div>

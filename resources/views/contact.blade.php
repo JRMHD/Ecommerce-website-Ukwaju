@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css"><!-- slick css -->
     <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css"><!-- slick theme css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- style css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -106,46 +108,113 @@
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-7 col-md-7">
-                    <form action="#">
+                    <form id="contactForm">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                    <span class="text-danger error-name"></span>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" class="form-control" name="email"
                                         placeholder="Your Email">
+                                    <span class="text-danger error-email"></span>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="number" class="form-control" id="phone"
+                                    <input type="number" class="form-control" name="phone"
                                         placeholder="Phone Number">
+                                    <span class="text-danger error-phone"></span>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject">
+                                    <span class="text-danger error-subject"></span>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="service" placeholder="Service">
+                                    <input type="text" class="form-control" name="service" placeholder="Service">
+                                    <span class="text-danger error-service"></span>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Your Message" rows="7"></textarea>
+                                    <textarea class="form-control" name="message" placeholder="Your Message" rows="7"></textarea>
+                                    <span class="text-danger error-message"></span>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <button class="btn btn-primary faqs-buttons">Submit Now</button>
+                            <div class="col-lg-12 text-center">
+                                <button type="submit" class="btn btn-primary faqs-buttons">Submit Now</button>
+                                <div class="loader" style="display: none;">
+                                    <div class="spinner"></div>
+                                </div>
                             </div>
                         </div>
                     </form>
+                    <div class="alert alert-success mt-3" style="display: none;">Your message has been sent
+                        successfully!</div>
                 </div>
+                <style>
+                    .spinner {
+                        width: 40px;
+                        height: 40px;
+                        border: 4px solid #f3f3f3;
+                        border-top: 4px solid #3498db;
+                        border-radius: 50%;
+                        animation: spin 1s linear infinite;
+                        margin: 20px auto;
+                    }
+
+                    @keyframes spin {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                </style>
+                <script>
+                    $(document).ready(function() {
+                        $('#contactForm').on('submit', function(e) {
+                            e.preventDefault();
+                            $('.loader').show();
+                            $('.text-danger').text('');
+
+                            $.ajax({
+                                url: "{{ route('contact.store') }}",
+                                method: "POST",
+                                data: new FormData(this),
+                                contentType: false,
+                                processData: false,
+                                success: function(response) {
+                                    $('.loader').hide();
+                                    if (response.success) {
+                                        $('.alert-success').text(response.message).show();
+                                        $('#contactForm')[0].reset();
+                                    }
+                                },
+                                error: function(xhr) {
+                                    $('.loader').hide();
+                                    var errors = xhr.responseJSON.errors;
+                                    if (errors) {
+                                        $.each(errors, function(key, value) {
+                                            $('.error-' + key).text(value[0]);
+                                        });
+                                    }
+                                }
+                            });
+                        });
+                    });
+                </script>
+
             </div>
         </div>
     </section>
