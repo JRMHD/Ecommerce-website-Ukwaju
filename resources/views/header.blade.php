@@ -14,7 +14,7 @@
                    <ul class="top-bar-info-block">
                        <li class="top-bar-contact">
                            <a href="#" class="contact" title="">
-                               <i class="flaticon-phone"></i>You can contact us 24/7<span>0 800 300-353</span>
+                               <i class="flaticon-phone"></i>You can contact us 24/7<span> + (212) 935 3811</span>
                            </a>
                        </li>
                        <li class="dropdown top-bar-dropdown">
@@ -52,7 +52,8 @@
                <div class="col-xl-2 col-lg-2 col-md-2">
                    <div class="header-logo">
                        <a href="/" title="">
-                           <img src="assets/images/logo/01.png" class="img-fluid" alt="">
+                           <img src="assets/images/logo/01.png" class="img-fluid" alt=""
+                               style="max-width: 40%; height: auto;">
                        </a>
                    </div>
                </div>

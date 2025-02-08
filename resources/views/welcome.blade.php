@@ -34,12 +34,10 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-7 col-md-6">
                                     <div class="home-banner-dtl">
-                                        <h4 class="home-banner-sub-heading">Exclusive Offer <span
-                                                class="home-badge">-20%
-                                                Off</span></h4>
-                                        <h1 class="home-banner-heading">Super Fast Performance</h1>
-                                        <p>We have prepared special discounts for you on electronic products. Don't miss
-                                            these opportunities...</p>
+                                        <h4 class="home-banner-sub-heading">Bringing Kenya Closer</h4>
+                                        <h1 class="home-banner-heading">Your Favorite Kenyan Products in the USA</h1>
+                                        <p>Experience the tastes, scents, and traditions of Kenya, delivered straight to
+                                            your doorstep.</p>
                                         <a href="#" title="" class="btn btn-primary">Shop Now<i
                                                 class="flaticon-right-arrows"></i></a>
                                     </div>
@@ -48,7 +46,7 @@
                                     <div class="home-banner-img">
                                         <a href="#" title=""><img
                                                 src="assets/images/home_page_4/banner/01.png" class="img-fluid"
-                                                alt=""></a>
+                                                alt="Ukwaju Market"></a>
                                     </div>
                                 </div>
                             </div>
@@ -57,12 +55,10 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-7 col-md-6">
                                     <div class="home-banner-dtl">
-                                        <h4 class="home-banner-sub-heading">Exclusive Offer <span
-                                                class="home-badge">-20%
-                                                Off</span></h4>
-                                        <h1 class="home-banner-heading">Super Fast Performance</h1>
-                                        <p>We have prepared special discounts for you on electronic products. Don't miss
-                                            these opportunities...</p>
+                                        <h4 class="home-banner-sub-heading">Authentic & Affordable</h4>
+                                        <h1 class="home-banner-heading">Shop Kenyan Staples with Ease</h1>
+                                        <p>Find your favorite Kenyan foods, beverages, and household essentials at
+                                            unbeatable prices.</p>
                                         <a href="#" title="" class="btn btn-primary">Shop Now<i
                                                 class="flaticon-right-arrows"></i></a>
                                     </div>
@@ -71,7 +67,7 @@
                                     <div class="home-banner-img">
                                         <a href="#" title=""><img
                                                 src="assets/images/home_page_4/banner/03.png" class="img-fluid"
-                                                alt=""></a>
+                                                alt="Kenyan Products"></a>
                                     </div>
                                 </div>
                             </div>
@@ -80,12 +76,10 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-7 col-md-6">
                                     <div class="home-banner-dtl">
-                                        <h4 class="home-banner-sub-heading">Exclusive Offer <span
-                                                class="home-badge">-20%
-                                                Off</span></h4>
-                                        <h1 class="home-banner-heading">Super Fast Performance</h1>
-                                        <p>We have prepared special discounts for you on electronic products. Don't miss
-                                            these opportunities...</p>
+                                        <h4 class="home-banner-sub-heading">A Taste of Home</h4>
+                                        <h1 class="home-banner-heading">Enjoy Kenyan Delicacies Anytime</h1>
+                                        <p>From tea and coffee to spices and snacks, we bring you the flavors that
+                                            remind you of home.</p>
                                         <a href="#" title="" class="btn btn-primary">Shop Now<i
                                                 class="flaticon-right-arrows"></i></a>
                                     </div>
@@ -94,7 +88,7 @@
                                     <div class="home-banner-img">
                                         <a href="#" title=""><img
                                                 src="assets/images/home_page_4/banner/04.png" class="img-fluid"
-                                                alt=""></a>
+                                                alt="Kenyan Snacks"></a>
                                     </div>
                                 </div>
                             </div>
@@ -105,13 +99,14 @@
                     <div class="home-banner-block home-banner-block-two">
                         <div class="home-banner-img">
                             <a href="#" title=""><img src="assets/images/home_page_4/banner/02.png"
-                                    class="img-fluid" alt=""></a>
+                                    class="img-fluid" alt="Kenyan Marketplace"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- home banner end -->
     <!-- services start -->
     <section id="services" class="services-main-block">
@@ -120,50 +115,54 @@
                 <div class="col-lg-3 col-md-3 col-6">
                     <div class="services-block text-center">
                         <div class="services-img">
-                            <img src="assets/images/home_page_4/service/01.png" class="img-fluid" alt="">
+                            <img src="assets/images/home_page_4/service/01.png" class="img-fluid"
+                                alt="Online Support">
                         </div>
                         <div class="services-dtls">
-                            <h5 class="services-heading">Online Support 24/7</h5>
-                            <p>Support online 24 hours a day</p>
+                            <h5 class="services-heading">24/7 Customer Support</h5>
+                            <p>We're here to help, anytime.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-6">
                     <div class="services-block text-center">
                         <div class="services-img">
-                            <img src="assets/images/home_page_4/service/02.png" class="img-fluid" alt="">
+                            <img src="assets/images/home_page_4/service/02.png" class="img-fluid"
+                                alt="Member Discount">
                         </div>
                         <div class="services-dtls">
-                            <h5 class="services-heading">Member Discount</h5>
-                            <p>Onevery order over $120.00</p>
+                            <h5 class="services-heading">Exclusive Member Deals</h5>
+                            <p>Unlock savings on select products.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-6">
                     <div class="services-block text-center">
                         <div class="services-img">
-                            <img src="assets/images/home_page_4/service/03.png" class="img-fluid" alt="">
+                            <img src="assets/images/home_page_4/service/03.png" class="img-fluid" alt="Money Return">
                         </div>
                         <div class="services-dtls">
-                            <h5 class="services-heading">Money Return</h5>
-                            <p>Back guarantee under 7 days</p>
+                            <h5 class="services-heading">7-Day Money-Back Guarantee</h5>
+                            <p>Shop with confidence, risk-free.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-6">
                     <div class="services-block text-center">
                         <div class="services-img">
-                            <img src="assets/images/home_page_4/service/04.png" class="img-fluid" alt="">
+                            <img src="assets/images/home_page_4/service/04.png" class="img-fluid"
+                                alt="Fast Shipping">
                         </div>
                         <div class="services-dtls">
-                            <h5 class="services-heading">Fast, Free Shipping</h5>
-                            <p>Fast, Free Shipping</p>
+                            <h5 class="services-heading">Fast & Reliable Shipping</h5>
+                            <p>Get your favorite Kenyan products quickly.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- services end -->
     <!-- home product start -->
     <section id="home-product" class="home-product-main-block">
@@ -1302,32 +1301,29 @@
     <!-- home product one end -->
     <!-- advertise one start -->
     <section id="advertise-one" class="advertise-one-main-block">
-        <div class="container">
-            <div class="advertise-one-block">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="home-banner-dtl">
-                            <h4 class="home-banner-sub-heading">Exclusive Offer <span class="home-badge">-20%
-                                    Off</span>
-                            </h4>
-                            <h1 class="home-banner-heading">Super Fast Performance</h1>
-                            <p>We have prepared special discounts for you on electronic products. Don't miss these
-                                opportunities...</p>
-                            <a title="" class="btn btn-primary">Shop Now<i
-                                    class="flaticon-right-arrows"></i></a>
-                        </div>
+    <div class="container">
+        <div class="advertise-one-block">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="home-banner-dtl">
+                        <h4 class="home-banner-sub-heading">Exclusive Deal <span class="home-badge">-20% Off</span>
+                        </h4>
+                        <h1 class="home-banner-heading">Bringing Kenya Closer</h1>
+                        <p>Enjoy special discounts on your favorite Kenyan products. Stay connected to home with every purchase!</p>
+                        <a title="" class="btn btn-primary">Shop Now<i class="flaticon-right-arrows"></i></a>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="advertise-one-img-block">
-                            <img src="assets/images/home_page_4/advertise/03.png" class="img-fluid"
-                                alt="">
-                        </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="advertise-one-img-block">
+                        <img src="assets/images/home_page_4/advertise/03.png" class="img-fluid" alt="Ukwaju Market Promotion">
                     </div>
                 </div>
             </div>
-            <div class="advertise-one-bottom-bg"></div>
         </div>
-    </section>
+        <div class="advertise-one-bottom-bg"></div>
+    </div>
+</section>
+
     <!-- advertise one end -->
     <!-- home product two start -->
     <section id="home-product-two" class="home-product-two-main-block">

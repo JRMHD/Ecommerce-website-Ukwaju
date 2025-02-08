@@ -37,7 +37,9 @@
     <section id="location" class="map-location-main-block">
         <div class="container">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115388.45928299891!2d74.47583742129713!3d25.341493678755352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c2368c070a55%3A0xc92f70a42dcb5294!2sBhilwara%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1701419553761!5m2!1sen!2sin"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.07665879064!2d-74.30914977179596!3d40.69667269554806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2ske!4v1739025620127!5m2!1sen!2ske"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="contact-main-block">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
@@ -47,7 +49,7 @@
                             </div>
                             <div class="contact-dtls">
                                 <h3 class="contact-title">Address</h3>
-                                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                                <p>New York, USA</p>
                             </div>
                         </div>
                     </div>
@@ -59,8 +61,8 @@
                             <div class="contact-dtls">
                                 <h3 class="contact-title">Lets Talk us</h3>
                                 <ul>
-                                    <li>Phone number: <a href="tel:+32566 - 800 - 890">+32566 - 800 - 890</a></li>
-                                    <li>Fax: 1234 -58963 - 007</li>
+                                    <li>Phone number: <a href="tel:+ (212) 935 3811">+ (212) 935 3811</a></li>
+                                    {{-- <li>Fax: 1234 -58963 - 007</li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -73,12 +75,9 @@
                             <div class="contact-dtls">
                                 <h3 class="contact-title">Send us email</h3>
                                 <ul>
-                                    <li><a
-                                            href="https://html.mediacity.co.in/cdn-cgi/l/email-protection#abcfcec6c49b9b9998d2c4ded9c6cac2c7c3c4dfc6cac2c785c8c4c6">demo0023yourmailhotmail.com</a>
+                                    <li><a href="">info@Ukwajumarket.com</a>
                                     </li>
-                                    <li><a
-                                            href="https://html.mediacity.co.in/cdn-cgi/l/email-protection#ec88898183dedf9583999e818d8580c28f8381">demo23yourmail.com</a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -95,13 +94,13 @@
                 <div class="col-xl-4 col-lg-5 col-md-5">
                     <div class="faqs-form-dtls">
                         <h4 class="sub-heading">Contact Us</h4>
-                        <h1 class="heading">Do You Have Any Question?</h1>
-                        <p>For your car we will do everything advice, repairs and maintenance. We are the some preferred
-                            choice by many car owners because</p>
+                        <h1 class="heading">Have Any Questions?</h1>
+                        <p>We’re here to bring you closer to home. Whether it’s about our products, shipping, or special
+                            requests, feel free to reach out. Ukwaju Market is always ready to assist you.</p>
                         <ul class="footer-social-icons">
                             <li><a href="#" title=""><i class="flaticon-facebook"></i></a></li>
                             <li><a href="#" title=""><i class="flaticon-twitter"></i></a></li>
-                            <li><a href="#" title=""></a><i class="flaticon-linkedin"></i></li>
+                            <li><a href="#" title=""><i class="flaticon-linkedin"></i></a></li>
                             <li><a href="#" title=""><i class="flaticon-pinterest"></i></a></li>
                         </ul>
                     </div>

@@ -39,29 +39,29 @@
     <!-- breadcrumb end -->
     <!-- breadcrumb image start -->
     <section class="breadcrumb-image-main-block">
-        <div class="container">
-            <div class="breadcrumb-image-block">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="advertise-block">
-                            <h6 class="advertise-sub-heading">Weekend Discount</h6>
-                            <h2 class="advertise-heading">Olympus Mark II Mirrorless Camera</h2>
-                            <p>Mirrorless Camera with 4K Video</p>
-                            <a title="" class="btn btn-primary">Shop Now<i class="flaticon-right-arrows"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-6">
-                        <ul class="discount-img">
-                            <li class="image-one"><img src="assets/images/home_page_4/breadcrumb/01.png" class="img-fluid" alt=""></li>
-                            <li class="image-two"><img src="assets/images/home_page_4/breadcrumb/02.png" class="img-fluid" alt=""></li>
-                            <li class="image-three"><img src="assets/images/home_page_4/breadcrumb/03.png" class="img-fluid" alt=""></li>
-                        </ul>
+    <div class="container">
+        <div class="breadcrumb-image-block">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="advertise-block">
+                        <h6 class="advertise-sub-heading">Weekend Special</h6>
+                        <h2 class="advertise-heading">Authentic Kenyan Delicacies</h2>
+                        <p>Bringing you the taste of home, fresh and authentic.</p>
+                        <a title="" class="btn btn-primary">Shop Now<i class="flaticon-right-arrows"></i></a>
                     </div>
                 </div>
-                <div class="breadcrumb-image-bg"></div>
+                <div class="col-xl-8 col-lg-6">
+                    <ul class="discount-img">
+                        <li class="image-one"><img src="assets/images/home_page_4/breadcrumb/01.png" class="img-fluid" alt="Kenyan Spices"></li>
+                        <li class="image-two"><img src="assets/images/home_page_4/breadcrumb/02.png" class="img-fluid" alt="Tea & Coffee"></li>
+                        <li class="image-three"><img src="assets/images/home_page_4/breadcrumb/03.png" class="img-fluid" alt="Traditional Snacks"></li>
+                    </ul>
+                </div>
             </div>
+            <div class="breadcrumb-image-bg"></div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- breadcrumb image end -->
     <!-- shop filter start -->  
     <section id="shop-filter" class="shop-filter-main-block">

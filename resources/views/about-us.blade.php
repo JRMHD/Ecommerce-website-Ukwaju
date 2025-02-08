@@ -41,26 +41,26 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-us-img">
-                        <img src="assets/images/home_page_4/about/01.png" class="img-fluid" alt="">
+                        <img src="assets/images/home_page_4/about/01.png" class="img-fluid" alt="Ukwaju Market">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="about-us-block">
-                        <h6 class="about-sub-heading hr-lines">Lawpro Solutions</h6>
-                        <h1 class="about-main-heading">Advocates for justice and equality</h1>
-                        <p>Our mission is there are many variations of passages of Lorem Ipsum available, but the
-                            majority have suffered alteration Our mission is there are many variations of passages of
-                            Lorem Ipsum available, but the majority have suffered alteration</p>
+                        <h6 class="about-sub-heading hr-lines">Ukwaju Market</h6>
+                        <h1 class="about-main-heading">Bringing Kenya Closer to You</h1>
+                        <p>They say, east or west, home is best. At Ukwaju Market, we are dedicated to creating a home
+                            away from home for Kenyans in the USA. We understand the longing for familiar tastes,
+                            scents, and cultural items that make home special.</p>
                         <div class="row">
                             <div class="col-lg-6">
-                                <h3 class="about-title">Digital Boost Pro</h3>
-                                <p class="mb-0">Lorem is Ipsum is simply is design iomyi is text Lorem Ipsum is simply
-                                    is our busi designer is our country.</p>
+                                <h3 class="about-title">Your Favorite Kenyan Products</h3>
+                                <p class="mb-0">From foodstuffs to handcrafted items, we bring you the essentials you
+                                    miss the most, right to your doorstep.</p>
                             </div>
                             <div class="col-lg-6">
-                                <h3 class="about-title">WebWise Solutions</h3>
-                                <p class="mb-0">Lorem is Ipsum is simply is design iomyi is text Lorem Ipsum is simply
-                                    is our busi designer is our country.</p>
+                                <h3 class="about-title">A Touch of Home</h3>
+                                <p class="mb-0">What reminds you of home? We curate and deliver those special products
+                                    that bring a piece of Kenya into your daily life.</p>
                             </div>
                         </div>
                     </div>
@@ -68,28 +68,29 @@
             </div>
         </div>
     </section>
+
     <!-- about end -->
     <!-- justice start -->
-    <section id="justice" class="justice-main-block">
+    <section id="why-choose-us" class="why-choose-us-main-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-us-block">
-                        <h6 class="about-sub-heading hr-lines">Why choose us</h6>
-                        <h1 class="about-main-heading">Justice served with compassion</h1>
+                        <h6 class="about-sub-heading hr-lines">Why Choose Ukwaju</h6>
+                        <h1 class="about-main-heading">A Taste of Home, Wherever You Are</h1>
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <span>01</span>Equality and solidarity
+                                        <span>01</span>Authentic Kenyan Products
                                     </button>
                                 </h3>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        The generated is therefore always free from repetition, injected humour, or
-                                        words etc.
+                                        We bring you the most authentic Kenyan products, from foodstuffs to cultural
+                                        artifacts, ensuring you always feel connected to home.
                                     </div>
                                 </div>
                             </div>
@@ -97,14 +98,14 @@
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <span>02</span>To inspire humanity
+                                        <span>02</span>Convenient & Reliable Delivery
                                     </button>
                                 </h3>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        The generated is therefore always free from repetition, injected humour, or
-                                        words etc.
+                                        We make sure your favorite Kenyan products reach you on time, no matter where
+                                        you are in the USA.
                                     </div>
                                 </div>
                             </div>
@@ -113,14 +114,14 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        <span>03</span>Better living programs
+                                        <span>03</span>Supporting Kenyan Businesses
                                     </button>
                                 </h3>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        The generated is therefore always free from repetition, injected humour, or
-                                        words etc.
+                                        By shopping with us, you not only get a taste of home but also support local
+                                        Kenyan businesses and artisans.
                                     </div>
                                 </div>
                             </div>
@@ -129,12 +130,13 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="about-us-img">
-                        <img src="assets/images/home_page_4/about/02.png" class="img-fluid" alt="">
+                        <img src="assets/images/home_page_4/about/02.png" class="img-fluid" alt="Why Choose Ukwaju">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- justice end -->
     <!-- dreams start -->
     <section id="dreams-section" class="dreams-main-block">
@@ -142,26 +144,27 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-us-img">
-                        <img src="assets/images/home_page_4/about/03.png" class="img-fluid" alt="">
+                        <img src="assets/images/home_page_4/about/03.png" class="img-fluid" alt="Ukwaju Dreams">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="about-us-block">
-                        <h6 class="about-sub-heading hr-lines">Lawpro Solutions</h6>
-                        <h1 class="about-main-heading">Building Dreams, Crafting Realities</h1>
-                        <p>Our mission is there are many variations of passages of Lorem Ipsum available, but the
-                            majority have suffered alteration Our mission is there are many variations of passages of
-                            Lorem Ipsum available, but the majority have suffered alteration </p>
+                        <h6 class="about-sub-heading hr-lines">Ukwaju Market</h6>
+                        <h1 class="about-main-heading">Keeping Traditions Alive, One Product at a Time</h1>
+                        <p>At Ukwaju Market, we believe in making your dreams of staying connected to home a reality.
+                            Whether it’s the food, the culture, or the little things that remind you of Kenya, we bring
+                            them closer to you in the USA.</p>
                         <ul class="about-list-block">
-                            <li><i class="flaticon-check-mark"></i>The power of applied intelligence</li>
-                            <li><i class="flaticon-check-mark"></i>We take a closer look</li>
-                            <li><i class="flaticon-check-mark"></i>The power of applied intelligence</li>
+                            <li><i class="flaticon-check-mark"></i>Authentic Kenyan products, handpicked for you</li>
+                            <li><i class="flaticon-check-mark"></i>Fast and reliable shipping across the USA</li>
+                            <li><i class="flaticon-check-mark"></i>Supporting Kenyan artisans and businesses</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- dreams end -->
     <!-- footer start -->
     @include('footer')
