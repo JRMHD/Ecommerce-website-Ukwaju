@@ -7,20 +7,47 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Offex - eCommerce Multipurpose HTML Template</title>
+    <title>Shop Kenyan Products Online | African Groceries & Foods | Ukwaju Market USA</title>
+    
+    <!-- Primary Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Media City">
+    <meta name="description" content="Buy authentic Kenyan groceries, spices, snacks, and cultural items online. Browse our wide selection of East African products with nationwide USA delivery. Fresh African foods and ingredients.">
+    <meta name="keywords" content="buy Kenyan food online, African grocery store USA, Kenyan spices, East African snacks, African cooking ingredients, Kenyan tea USA, African food store online">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ukwajumarket.com/shop">
+    <meta property="og:title" content="Shop Authentic Kenyan Products | Ukwaju Market USA">
+    <meta property="og:description" content="Browse and buy authentic Kenyan groceries, spices, snacks, and cultural items. Quality East African products delivered across USA.">
+    <meta property="og:image" content="assets/images/ukwaju-market-shop-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ukwajumarket.com/shop">
+    <meta property="twitter:title" content="Shop Kenyan Products | Ukwaju Market USA">
+    <meta property="twitter:description" content="Browse authentic Kenyan groceries, spices, snacks & cultural items. Quality East African products delivered USA-wide.">
+    <meta property="twitter:image" content="assets/images/ukwaju-market-shop-og.jpg">
+    
+    <!-- Additional Meta -->
+    <meta name="author" content="Ukwaju Market">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"> <!-- favicon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- bootstrap css -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
-        rel="stylesheet"> <!-- google fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css"> <!-- flaticons css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css"><!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css"><!-- slick theme css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- style css -->
+    <link rel="canonical" href="https://www.ukwajumarket.com/shop">
+    
+    <!-- E-commerce Specific Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta property="og:availability" content="instock">
+    <meta property="og:price:currency" content="USD">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -30,7 +57,7 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Shop</li>
                 </ol>
             </nav>

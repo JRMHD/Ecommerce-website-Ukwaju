@@ -2,23 +2,56 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Offex - eCommerce Multipurpose HTML Template</title>
+    <title>Contact Ukwaju Market | Customer Support | Kenyan Products USA</title>
+
+    <!-- Primary Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Media City">
+    <meta name="description"
+        content="Need help? Contact Ukwaju Market for support with your Kenyan grocery orders, product inquiries, or wholesale questions. We're here to help you connect with authentic African products in the USA.">
+    <meta name="keywords"
+        content="contact Ukwaju Market, Kenyan store support, African grocery help, Kenyan products customer service, East African store contact, African food delivery support">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ukwajumarket.com/contact">
+    <meta property="og:title" content="Contact Us | Ukwaju Market Customer Support">
+    <meta property="og:description"
+        content="Get in touch with Ukwaju Market. We're here to help with your Kenyan grocery orders and product inquiries in the USA.">
+    <meta property="og:image" content="assets/images/ukwaju-market-contact-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ukwajumarket.com/contact">
+    <meta property="twitter:title" content="Contact Ukwaju Market | Customer Support">
+    <meta property="twitter:description"
+        content="Need assistance? Contact our team for help with your Kenyan product orders and inquiries.">
+    <meta property="twitter:image" content="assets/images/ukwaju-market-contact-og.jpg">
+
+    <!-- Additional Meta -->
+    <meta name="author" content="Ukwaju Market">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"> <!-- favicon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="canonical" href="https://www.ukwajumarket.com/contact">
+
+    <!-- Contact-Specific Meta -->
+    <meta name="robots" content="index, follow, noarchive">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="format-detection" content="email=yes">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
-        rel="stylesheet"> <!-- google fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css"> <!-- flaticons css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css"><!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css"><!-- slick theme css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- style css -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +61,7 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                 </ol>
             </nav>
@@ -113,7 +146,8 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" name="name"
+                                        placeholder="Your Name">
                                     <span class="text-danger error-name"></span>
                                 </div>
                             </div>

@@ -5,21 +5,53 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Offex - eCommerce Multipurpose HTML Template</title>
+    <title>Privacy Policy & Terms | Ukwaju Market | Kenyan Products USA</title>
+
+    <!-- Primary Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Media City">
+    <meta name="description"
+        content="Read Ukwaju Market's privacy policy and terms of service. Learn how we protect your data while providing authentic Kenyan products across the USA. Transparent, secure shopping experience.">
+    <meta name="keywords"
+        content="Ukwaju Market privacy policy, African store terms, Kenyan products privacy, shipping policy USA, returns policy African goods, customer data protection">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ukwajumarket.com/policy">
+    <meta property="og:title" content="Privacy Policy & Terms | Ukwaju Market">
+    <meta property="og:description"
+        content="Our commitment to protecting your privacy while shopping for authentic Kenyan products. Read our terms and policies.">
+    <meta property="og:image" content="assets/images/ukwaju-market-policy-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ukwajumarket.com/policy">
+    <meta property="twitter:title" content="Privacy Policy & Terms | Ukwaju Market">
+    <meta property="twitter:description"
+        content="Our commitment to your privacy and security while shopping for Kenyan products in the USA.">
+    <meta property="twitter:image" content="assets/images/ukwaju-market-policy-og.jpg">
+
+    <!-- Additional Meta -->
+    <meta name="author" content="Ukwaju Market">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"> <!-- favicon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="canonical" href="https://www.ukwajumarket.com/policy">
+
+    <!-- Policy-Specific Meta -->
+    <meta name="robots" content="index, nofollow">
+    <meta http-equiv="cache-control" content="max-age=86400">
+    <meta name="revisit-after" content="1 day">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
-        rel="stylesheet"> <!-- google fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css"> <!-- flaticons css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css"><!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css"><!-- slick theme css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- style css -->
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -29,7 +61,7 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
                 </ol>
             </nav>
@@ -44,79 +76,60 @@
                     <div class="policy-page-block">
                         <div class="policy-page-dtl">
                             <h6 class="policy-heading">Return and Refund Policy Overview:</h6>
-                            <p>Our return and refund policy has a duration of 30 days from the date of purchase. If 30
-                                days have elapsed since your purchase, we regret to inform you that we cannot offer a
-                                full refund or exchange. <br>
-                                To be eligible for a return, the item must be unused and in the same condition as when
-                                you received it. It should also be in its original packaging. <br>
-                                Certain types of goods are exempt from being returned, including perishable items like
-                                food, flowers, newspapers, or magazines. Additionally, we do not accept returns for
-                                intimate or sanitary goods, hazardous materials, or flammable liquids and gases.</p>
+                            <p>We offer a 30-day return policy for non-perishable items in their original, unopened
+                                condition. If 30 days have elapsed since your purchase, we regret to inform you that we
+                                cannot offer a full refund or exchange.<br>
+                                For perishable food items, please contact us within 24 hours of delivery if you notice
+                                any issues. Customer satisfaction is our priority, and we'll work with you to resolve
+                                any concerns about your order.</p>
                         </div>
                         <div class="policy-page-dtl">
-                            <h6 class="policy-heading">The following items are non-returnable:</h6>
+                            <h6 class="policy-heading">Non-Returnable Items:</h6>
                             <ul class="policy-lst">
                                 <li>Gift cards</li>
                                 <li>Downloadable software products</li>
                                 <li>Some health and personal care items</li>
-                            </ul>
-                            <p>To complete a return, a receipt or proof of purchase is required. Please avoid sending
-                                the purchase back to the manufacturer.</p>
-                        </div>
-                        <div class="policy-page-dtl">
-                            <h6 class="policy-heading">Partial refunds may be granted in specific situations, such as:
-                            </h6>
-                            <ul class="policy-lst">
-                                <li>Books with obvious signs of use</li>
-                                <li>Opened CDs, DVDs, VHS tapes, software, video games, cassette tapes, or vinyl records
-                                </li>
-                                <li>Items not in their original condition, damaged, or missing parts for reasons not due
-                                    to our error</li>
-                                <li class="days">Items returned more than 30 days after delivery</li>
+                                <li>Perishable food items</li>
                             </ul>
                         </div>
                         <div class="policy-page-dtl">
-                            <h6 class="policy-heading">Refunds Process:</h6>
+                            <h6 class="policy-heading">Refund Process:</h6>
                             <p>Upon receiving and inspecting your returned item, we will notify you via email regarding
                                 the approval or rejection of your refund. If approved, the refund will be processed, and
-                                a credit will automatically be applied to your credit card or original method of payment
-                                within a specified timeframe.</p>
+                                a credit will automatically be applied to your original method of payment.</p>
                         </div>
                         <div class="policy-page-dtl">
                             <h6 class="policy-heading">Late or Missing Refunds:</h6>
-                            <p>If you haven&apos;t received a refund, please check your bank account and contact your
-                                credit card company. If the issue persists, contact your bank. For further assistance,
-                                reach out to us at {email address}. <br>
-                                Sale Items: <br>
-                                Refunds are applicable only to regular-priced items; sale items are non-refundable.
-                            </p>
+                            <p>If you haven't received a refund yet, please check your bank account first. Then, contact
+                                your credit card company or bank, as it may take some time before your refund is
+                                officially posted. If the issue persists, please reach out to us at {email address}.</p>
                         </div>
                         <div class="policy-page-dtl">
                             <h6 class="policy-heading">Exchanges:</h6>
-                            <p>We only replace items that are defective or damaged. If you need to exchange a defective
-                                or damaged item, please email us at {email address} and send the item to: {physical
-                                address}. <br>
-                                Gifts: <br>
-                                If the item was marked as a gift and shipped directly to you, you&apos;ll receive a gift
-                                credit for the return value. If the item wasn&apos;t marked as a gift, the refund will
-                                be issued to the gift giver.</p>
+                            <p>We only replace items that are defective or damaged. If you need an exchange, please
+                                email us at {email address} and send the item to: {physical address}.</p>
+                        </div>
+                        <div class="policy-page-dtl">
+                            <h6 class="policy-heading">Wholesale and Bulk Orders:</h6>
+                            <p>Yes, we offer wholesale options for businesses and bulk orders for events or large
+                                families. Contact our wholesale department for special pricing and minimum order
+                                requirements.</p>
                         </div>
                         <div class="policy-page-dtl">
                             <h6 class="policy-heading">Shipping Returns:</h6>
-                            <p>To return a product, mail it to: {physical address}. You are responsible for the return
-                                shipping costs, which are non-refundable. Consider using a trackable shipping service or
-                                purchasing shipping insurance for more expensive items, as we cannot guarantee receipt
-                                of your returned item.</p>
-                            <p class="mt-5">For assistance, contact us at {email}.</p>
+                            <p>To return a product, mail it to: {physical address}. Customers are responsible for return
+                                shipping costs. We recommend using a trackable shipping service or purchasing shipping
+                                insurance for high-value items.</p>
+                            <p class="mt-5">For assistance, contact Us.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="policy-questions">
                         <h6 class="policy-heading">Have Any More Questions?</h6>
-                        <p>If you have any inquiries or concerns regarding our shipping policy, feel free to reach out
-                            to our customer service team.</p>
-                        <a href="contact.html" title="" class="btn btn-primary">Contact Us<i
+                        <p>If you have any inquiries or concerns regarding our policies, feel free to reach out to our
+                            customer service team.</p>
+                        <a href="/contact" title="" class="btn btn-primary">Contact Us<i
                                 class="flaticon-right-arrows"></i></a>
                     </div>
                 </div>

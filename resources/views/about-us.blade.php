@@ -4,21 +4,53 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Offex - eCommerce Multipurpose HTML Template</title>
+    <title>About Ukwaju Market | Authentic Kenyan Products & Culture in USA | Our Story</title>
+
+    <!-- Primary Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Media City">
+    <meta name="description"
+        content="Discover how Ukwaju Market brings authentic Kenyan products to the USA. Our mission is creating a home away from home for Kenyans in America through traditional foods and cultural items.">
+    <meta name="keywords"
+        content="Ukwaju Market story, Kenyan store USA, African marketplace America, Kenyan business USA, East African store history, authentic African products, Kenyan culture USA">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ukwajumarket.com/about-us">
+    <meta property="og:title" content="About Ukwaju Market | Bringing Kenya Closer to You">
+    <meta property="og:description"
+        content="Learn about our mission to bring authentic Kenyan products to the USA. Creating a home away from home for Kenyans in America through traditional foods and cultural items.">
+    <meta property="og:image" content="assets/images/ukwaju-market-about-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ukwajumarket.com/about-us">
+    <meta property="twitter:title" content="About Ukwaju Market | Our Kenyan-American Story">
+    <meta property="twitter:description"
+        content="Discover how we're bringing authentic Kenyan products to the USA. Creating a cultural bridge through traditional foods and items.">
+    <meta property="twitter:image" content="assets/images/ukwaju-market-about-og.jpg">
+
+    <!-- Additional Meta -->
+    <meta name="author" content="Ukwaju Market">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"> <!-- favicon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="canonical" href="https://www.ukwajumarket.com/about-us">
+
+    <!-- Company-Specific Meta -->
+    <meta name="geo.region" content="US">
+    <meta name="geo.position" content="39.8283;-98.5795">
+    <meta name="ICBM" content="39.8283, -98.5795">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
-        rel="stylesheet"> <!-- google fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css"> <!-- flaticons css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css"><!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css"><!-- slick theme css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- style css -->
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -28,7 +60,7 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">About Us</li>
                 </ol>
             </nav>
@@ -82,7 +114,8 @@
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
                                         <span>01</span>Authentic Kenyan Products
                                     </button>
                                 </h3>
@@ -96,8 +129,9 @@
                             </div>
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
                                         <span>02</span>Convenient & Reliable Delivery
                                     </button>
                                 </h3>
@@ -111,9 +145,9 @@
                             </div>
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
                                         <span>03</span>Supporting Kenyan Businesses
                                     </button>
                                 </h3>

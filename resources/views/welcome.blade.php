@@ -4,21 +4,48 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Offex - eCommerce Multipurpose HTML Template</title>
+    <title>Ukwaju Market | Authentic Kenyan Products & Food in USA | African Grocery Store</title>
+
+    <!-- Primary Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Media City">
+    <meta name="description"
+        content="Shop authentic Kenyan food, groceries, and cultural items in the USA. Ukwaju Market delivers East African essentials nationwide. Your trusted source for traditional Kenyan products.">
+    <meta name="keywords"
+        content="Kenyan food USA, African grocery store, Kenyan products America, East African market online, African food delivery, Kenyan groceries USA, African cultural items">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ukwajumarket.com/">
+    <meta property="og:title" content="Ukwaju Market | Authentic Kenyan Products in USA">
+    <meta property="og:description"
+        content="Your trusted source for authentic Kenyan food, groceries, and cultural items delivered across the USA. Bringing Kenya closer to you.">
+    <meta property="og:image" content="assets/images/ukwaju-market-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ukwajumarket.com/">
+    <meta property="twitter:title" content="Ukwaju Market | Kenyan Products in USA">
+    <meta property="twitter:description"
+        content="Shop authentic Kenyan food, groceries, and cultural items. Nationwide delivery across USA.">
+    <meta property="twitter:image" content="assets/images/ukwaju-market-og.jpg">
+
+    <!-- Additional Meta -->
+    <meta name="author" content="Ukwaju Market">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"> <!-- favicon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="canonical" href="https://www.ukwajumarket.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
-        rel="stylesheet"> <!-- google fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css"> <!-- flaticons css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css"><!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css"><!-- slick theme css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- style css -->
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -38,7 +65,7 @@
                                         <h1 class="home-banner-heading">Your Favorite Kenyan Products in the USA</h1>
                                         <p>Experience the tastes, scents, and traditions of Kenya, delivered straight to
                                             your doorstep.</p>
-                                        <a href="#" title="" class="btn btn-primary">Shop Now<i
+                                        <a href="/shop" title="" class="btn btn-primary">Shop Now<i
                                                 class="flaticon-right-arrows"></i></a>
                                     </div>
                                 </div>
@@ -59,7 +86,7 @@
                                         <h1 class="home-banner-heading">Shop Kenyan Staples with Ease</h1>
                                         <p>Find your favorite Kenyan foods, beverages, and household essentials at
                                             unbeatable prices.</p>
-                                        <a href="#" title="" class="btn btn-primary">Shop Now<i
+                                        <a href="/shop" title="" class="btn btn-primary">Shop Now<i
                                                 class="flaticon-right-arrows"></i></a>
                                     </div>
                                 </div>
@@ -80,7 +107,7 @@
                                         <h1 class="home-banner-heading">Enjoy Kenyan Delicacies Anytime</h1>
                                         <p>From tea and coffee to spices and snacks, we bring you the flavors that
                                             remind you of home.</p>
-                                        <a href="#" title="" class="btn btn-primary">Shop Now<i
+                                        <a href="/shop" title="" class="btn btn-primary">Shop Now<i
                                                 class="flaticon-right-arrows"></i></a>
                                     </div>
                                 </div>
@@ -721,7 +748,7 @@
                                 <h6 class="advertise-sub-heading">Weekend Discount</h6>
                                 <h2 class="advertise-heading">Olympus Mark II Mirrorless Camera</h2>
                                 <p>Mirrorless Camera with 4K Video</p>
-                                <a href="#" title="" class="btn btn-primary">Shop Now<i
+                                <a href="/shop" title="" class="btn btn-primary">Shop Now<i
                                         class="flaticon-right-arrows"></i></a>
                             </div>
                             <div class="col-lg-5 col-md-5">
@@ -742,7 +769,7 @@
                                 <h6 class="advertise-sub-heading">Weekend Discount</h6>
                                 <h2 class="advertise-heading">Olympus Mark II Mirrorless Camera</h2>
                                 <p>Mirrorless Camera with 4K Video</p>
-                                <a href="#" title="" class="btn btn-primary">Shop Now<i
+                                <a href="/shop" title="" class="btn btn-primary">Shop Now<i
                                         class="flaticon-right-arrows"></i></a>
                             </div>
                             <div class="col-lg-5 col-md-5">
@@ -1301,28 +1328,32 @@
     <!-- home product one end -->
     <!-- advertise one start -->
     <section id="advertise-one" class="advertise-one-main-block">
-    <div class="container">
-        <div class="advertise-one-block">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="home-banner-dtl">
-                        <h4 class="home-banner-sub-heading">Exclusive Deal <span class="home-badge">-20% Off</span>
-                        </h4>
-                        <h1 class="home-banner-heading">Bringing Kenya Closer</h1>
-                        <p>Enjoy special discounts on your favorite Kenyan products. Stay connected to home with every purchase!</p>
-                        <a title="" class="btn btn-primary">Shop Now<i class="flaticon-right-arrows"></i></a>
+        <div class="container">
+            <div class="advertise-one-block">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="home-banner-dtl">
+                            <h4 class="home-banner-sub-heading">Exclusive Deal <span class="home-badge">-20%
+                                    Off</span>
+                            </h4>
+                            <h1 class="home-banner-heading">Bringing Kenya Closer</h1>
+                            <p>Enjoy special discounts on your favorite Kenyan products. Stay connected to home with
+                                every purchase!</p>
+                            <a title="/shop" class="btn btn-primary">Shop Now<i
+                                    class="flaticon-right-arrows"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="advertise-one-img-block">
-                        <img src="assets/images/home_page_4/advertise/03.png" class="img-fluid" alt="Ukwaju Market Promotion">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="advertise-one-img-block">
+                            <img src="assets/images/home_page_4/advertise/03.png" class="img-fluid"
+                                alt="Ukwaju Market Promotion">
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="advertise-one-bottom-bg"></div>
         </div>
-        <div class="advertise-one-bottom-bg"></div>
-    </div>
-</section>
+    </section>
 
     <!-- advertise one end -->
     <!-- home product two start -->
