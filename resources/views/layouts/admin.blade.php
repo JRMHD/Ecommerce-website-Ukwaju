@@ -12,11 +12,13 @@
 
     <nav class="bg-blue-600 p-4 flex justify-between items-center">
         <h1 class="text-white text-xl font-bold">Admin Dashboard</h1>
-        <div class="text-white">
-            Welcome, <strong>{{ Auth::user()->name }}</strong>
-            <form action="{{ route('logout') }}" method="POST" class="inline">
+        <div class="text-white flex items-center space-x-6">
+            <a href="/admin/products" class="hover:underline">Products</a>
+            <!-- You can add more nav links here -->
+            <span>Welcome, <strong>{{ Auth::user()->name }}</strong></span>
+            <form action="{{ route('logout') }}" method="POST" class="inline ml-4">
                 @csrf
-                <button type="submit" class="ml-4 bg-red-500 px-3 py-1 rounded">Logout</button>
+                <button type="submit" class="bg-red-500 px-3 py-1 rounded">Logout</button>
             </form>
         </div>
     </nav>

@@ -192,550 +192,95 @@
 
     <!-- services end -->
     <!-- home product start -->
-    <section id="home-product" class="home-product-main-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="home-product-block text-center">
-                        <div class="home-product-img">
-                            <a href="shop-detail.html" title=""><img
-                                    src="assets/images/home_page_4/product/01.png" class="img-fluid"
-                                    alt=""></a>
-                        </div>
-                        <div class="home-product-dtls text-start">
-                            <ul>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="total-rating">(3)</li>
-                            </ul>
-                            <h4 class="home-product-heading"><a href="shop-detail.html" title="">Sony A7 III
-                                    Mirrorless Camera with 4K
-                                    Video</a></h4>
-                            <div class="product-price-cart-block">
-                                <div class="row">
-                                    <div class="col-lg-6 col-6">
-                                        <div class="home-product-price">
-                                            $159.77
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-6">
-                                        <div class="home-product-cart">
-                                            <a href="#" title=""><i
-                                                    class="flaticon-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-block">
-                                <progress class="progress-bar" value="60" max="100"></progress>
-                                <div class="row">
-                                    <div class="col-lg-6 col-6">
-                                        <div class="product-avail">Available: <b>79</b></div>
-                                    </div>
-                                    <div class="col-lg-6 col-6">
-                                        <div class="product-sold">Sold: <b>18</b></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Time remaining until the end of the offer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="home-product-block text-center">
-                        <div class="home-product-img">
-                            <a href="shop-detail.html" title=""><img
-                                    src="assets/images/home_page_4/product/02.png" class="img-fluid"
-                                    alt=""></a>
-                        </div>
-                        <div class="home-product-dtls text-start">
-                            <ul>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="total-rating">(3)</li>
-                            </ul>
-                            <h4 class="home-product-heading"><a href="shop-detail.html" title="">Sony A7 III
-                                    Mirrorless Camera with 4K
-                                    Video</a></h4>
-                            <div class="product-price-cart-block">
-                                <div class="row">
-                                    <div class="col-lg-6 col-6">
-                                        <div class="home-product-price">
-                                            $159.77
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-6">
-                                        <div class="home-product-cart">
-                                            <a href="#" title=""><i
-                                                    class="flaticon-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-block">
-                                <progress class="progress-bar" value="60" max="100"></progress>
-                                <div class="row">
-                                    <div class="col-lg-6 col-6">
-                                        <div class="product-avail">Available: <b>79</b></div>
-                                    </div>
-                                    <div class="col-lg-6 col-6">
-                                        <div class="product-sold">Sold: <b>18</b></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Time remaining until the end of the offer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="home-product-block text-center">
-                        <div class="home-product-img">
-                            <a href="shop-detail.html" title=""><img
-                                    src="assets/images/home_page_4/product/03.png" class="img-fluid"
-                                    alt=""></a>
-                        </div>
-                        <div class="home-product-dtls text-start">
-                            <ul>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="icons"><i class="flaticon-star"></i></li>
-                                <li class="total-rating">(3)</li>
-                            </ul>
-                            <h4 class="home-product-heading"><a href="shop-detail.html" title="">Sony A7 III
-                                    Mirrorless Camera with 4K
-                                    Video</a></h4>
-                            <div class="product-price-cart-block">
-                                <div class="row">
-                                    <div class="col-lg-6 col-6">
-                                        <div class="home-product-price">
-                                            $159.77
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-6">
-                                        <div class="home-product-cart">
-                                            <a href="#" title=""><i
-                                                    class="flaticon-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-block">
-                                <progress class="progress-bar" value="60" max="100"></progress>
-                                <div class="row">
-                                    <div class="col-lg-6 col-6">
-                                        <div class="product-avail">Available: <b>79</b></div>
-                                    </div>
-                                    <div class="col-lg-6 col-6">
-                                        <div class="product-sold">Sold: <b>18</b></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Time remaining until the end of the offer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container" style="padding: 20px; max-width: 1350px; margin: 0 auto;">
+        <!-- Section Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h2
+                style="margin: 0; font-size: 28px; font-weight: 700; background: linear-gradient(45deg, #2d3436, #636e72); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Latest Products
+            </h2>
         </div>
-    </section>
-    <!-- home product end -->
-    <!-- deals product start -->
-    <section id="deals-product" class="deals-product-main-block">
-        <div class="container">
-            <div class="deals-product-border">
-                <div class="row">
-                    <div class="col-lg-4 col-md-5">
-                        <div class="section">
-                            <h3 class="section-heading">Deals Of The Day</h3>
+
+        <div class="row" style="display: flex; flex-wrap: wrap; margin: -10px;">
+            @foreach ($latestProducts as $product)
+                <!-- Changed to col-4 for 3 items per row on larger screens -->
+                <div class="col-6 col-lg-4" style="padding: 10px; box-sizing: border-box;">
+                    <a href="{{ route('shop.detail', $product->id) }}"
+                        style="text-decoration: none; color: inherit; display: block;">
+                        <div style="background: white; border-radius: 16px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: all 0.3s ease; height: 100%; overflow: hidden; position: relative; transform: translateY(0); cursor: pointer;"
+                            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.12)'"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0,0,0,0.08)'">
+                            <!-- Image Container -->
+                            <div
+                                style="position: relative; width: 100%; padding-top: 75%; overflow: hidden; background: #f8f9fa; border-radius: 16px 16px 0 0;">
+                                @php
+                                    $images = $product->images ? json_decode($product->images) : [];
+                                @endphp
+                                <img src="{{ isset($images[0]) ? asset('storage/' . $images[0]) : asset('images/no-image.png') }}"
+                                    alt="{{ $product->name }}"
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+
+                            <!-- Content Container -->
+                            <div style="padding: 14px;">
+                                <!-- Product Name -->
+                                <h5
+                                    style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #2d3436; line-height: 1.4; height: 44px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                    {{ $product->name }}
+                                </h5>
+
+                                <!-- Star Rating -->
+                                <div style="margin-bottom: 8px;">
+                                    <div style="color: #ffd700;">
+                                        ★★★★★
+                                        <span style="font-size: 12px; color: #718093; margin-left: 5px;">
+                                            (4.8)
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Price Section -->
+                                <div style="margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                                    <span style="font-size: 18px; font-weight: 700; color: #2d3436;">
+                                        ${{ number_format($product->price, 2) }}
+                                    </span>
+                                    @if ($product->slashed_price)
+                                        <span style="font-size: 14px; color: #e74c3c; text-decoration: line-through;">
+                                            ${{ number_format($product->slashed_price, 2) }}
+                                        </span>
+                                    @endif
+                                </div>
+
+                                <!-- Stock Status -->
+                                <div
+                                    style="font-size: 12px; color: #718093; display: flex; justify-content: space-between; align-items: center;">
+                                    <span>
+                                        <span
+                                            style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: {{ $product->stock_availability > 0 ? '#00b894' : '#ff7675' }}; margin-right: 5px;"></span>
+                                        {{ $product->stock_availability > 0 ? 'In Stock' : 'Out of Stock' }}
+                                    </span>
+                                    <span
+                                        style="background-color: #00b894; color: white; padding: 4px 8px; border-radius: 12px; font-size: 11px;">
+                                        View Details
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8 col-md-7">
-                        <ul class="nav nav-pills float-lg-end float-start" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="pills-tab1-tab" data-bs-toggle="pill"
-                                    href="#pills-tab1" role="tab" aria-controls="pills-tab1"
-                                    aria-selected="true">Latest Products</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-tab2-tab" data-bs-toggle="pill" href="#pills-tab2"
-                                    role="tab" aria-controls="pills-tab2" aria-selected="false">Top Rating</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-tab3-tab" data-bs-toggle="pill" href="#pills-tab3"
-                                    role="tab" aria-controls="pills-tab3" aria-selected="false">Best Selling</a>
-                            </li>
-                        </ul>
-                    </div>
+                    </a>
                 </div>
-            </div>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-tab1" role="tabpanel"
-                    aria-labelledby="pills-tab1-tab" tabindex="0">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/02.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/03.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/01.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/06.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/04.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/05.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-tab2" role="tabpanel" aria-labelledby="pills-tab2-tab"
-                    tabindex="0">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/05.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/04.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/06.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/01.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/03.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/02.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-tab3" role="tabpanel" aria-labelledby="pills-tab3-tab"
-                    tabindex="0">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/01.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/03.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/05.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/06.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/02.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="deals-product-block">
-                                <div class="deals-product-img text-center">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/deals/04.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="deals-product-dtls">
-                                    <h6 class="deals-product-heading"><a href="shop-detail.html" title="">Sony
-                                            A7 III Mirrorless Camera
-                                            with 4K Video</a></h6>
-                                    <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    <div class="deals-product-btn">
-                                        <button type="button" class="btn btn-primary"><i
-                                                class="flaticon-shopping-cart"></i>Add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
-    </section>
+
+        <!-- Shop More Button -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="{{ url('/shop') }}"
+                style="display: inline-block; padding: 12px 30px; background: linear-gradient(45deg, #2d3436, #636e72); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: transform 0.3s ease;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Explore More Products
+            </a>
+        </div>
+    </div>
+
     <!-- deals product end -->
     <!-- advertise start -->
     <section id="advertise-product" class="advertise-product-main-block">
@@ -788,543 +333,94 @@
         </div>
     </section>
     <!-- advertise end -->
-    <!-- shop category start -->
-    <section id="shop-category" class="shop-category-main-block">
-        <div class="container">
-            <div class="deals-product-border">
-                <div class="row">
-                    <div class="col-lg-4 col-md-5">
-                        <div class="section">
-                            <h3 class="section-heading">Shop By Categories</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-7">
-                        <p class="shop-category-des">No handling fees + free shipping on orders over $35*</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-2 col-md-4">
-                    <div class="deals-product-block text-center">
-                        <div class="deals-product-img">
-                            <a href="#" title=""><img src="assets/images/home_page_4/deals/02.png"
-                                    class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="deals-product-dtls">
-                            <h6 class="deals-product-heading"><a href="#" title="">Computers &
-                                    Laptop</a></h6>
-                            <p>6 Items</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="deals-product-block text-center">
-                        <div class="deals-product-img">
-                            <a href="#" title=""><img src="assets/images/home_page_4/deals/03.png"
-                                    class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="deals-product-dtls">
-                            <h6 class="deals-product-heading"><a href="#" title="">Mobiles &
-                                    Tablets</a></h6>
-                            <p>6 Items</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="deals-product-block text-center">
-                        <div class="deals-product-img">
-                            <a href="#" title=""><img src="assets/images/home_page_4/deals/01.png"
-                                    class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="deals-product-dtls">
-                            <h6 class="deals-product-heading"><a href="#" title="">Game &
-                                    Accessories</a></h6>
-                            <p>6 Items</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="deals-product-block text-center">
-                        <div class="deals-product-img">
-                            <a href="#" title=""><img src="assets/images/home_page_4/deals/02.png"
-                                    class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="deals-product-dtls">
-                            <h6 class="deals-product-heading"><a href="#" title="">Camera & Photo</a>
-                            </h6>
-                            <p>6 Items</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="deals-product-block text-center">
-                        <div class="deals-product-img">
-                            <a href="#" title=""><img src="assets/images/home_page_4/deals/03.png"
-                                    class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="deals-product-dtls">
-                            <h6 class="deals-product-heading"><a href="#" title="">Electronics &
-                                    Digital</a></h6>
-                            <p>6 Items</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="deals-product-block text-center">
-                        <div class="deals-product-img">
-                            <a href="#" title=""><img src="assets/images/home_page_4/deals/01.png"
-                                    class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="deals-product-dtls">
-                            <h6 class="deals-product-heading"><a href="#" title="">Audio &
-                                    Headphone</a></h6>
-                            <p>6 Items</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container" style="padding: 20px; max-width: 1350px; margin: 0 auto;">
+        <!-- Section Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h2
+                style="margin: 0; font-size: 28px; font-weight: 700; background: linear-gradient(45deg, #6c5ce7, #a8a4e3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Discover Hidden Gems
+            </h2>
         </div>
-    </section>
-    <!-- shop category end -->
-    <!-- home product one start -->
-    <section id="home-product-one" class="home-product-one-main-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="home-product-block text-center">
-                                <div class="advertise-block text-start">
-                                    <h6 class="advertise-sub-heading">Weekend Discount</h6>
-                                    <h2 class="advertise-heading">New Device coming this fall</h2>
-                                    <p>Big screens in incredibly slim designs...</p>
+
+        <div class="row" style="display: flex; flex-wrap: wrap; margin: -10px;">
+            @foreach ($bottomProducts as $product)
+                <!-- Changed to col-4 for 3 items per row on larger screens -->
+                <div class="col-6 col-lg-4" style="padding: 10px; box-sizing: border-box;">
+                    <a href="{{ route('shop.detail', $product->id) }}"
+                        style="text-decoration: none; color: inherit; display: block;">
+                        <div style="background: white; border-radius: 16px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: all 0.3s ease; height: 100%; overflow: hidden; position: relative; transform: translateY(0); cursor: pointer;"
+                            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.12)'"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0,0,0,0.08)'">
+                            <!-- Image Container -->
+                            <div
+                                style="position: relative; width: 100%; padding-top: 75%; overflow: hidden; background: #f8f9fa; border-radius: 16px 16px 0 0;">
+                                @php
+                                    $images = $product->images ? json_decode($product->images) : [];
+                                @endphp
+                                <img src="{{ isset($images[0]) ? asset('storage/' . $images[0]) : asset('images/no-image.png') }}"
+                                    alt="{{ $product->name }}"
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+
+                            <!-- Content Container -->
+                            <div style="padding: 14px;">
+                                <!-- Product Name -->
+                                <h5
+                                    style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #2d3436; line-height: 1.4; height: 44px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                    {{ $product->name }}
+                                </h5>
+
+                                <!-- Star Rating -->
+                                <div style="margin-bottom: 8px;">
+                                    <div style="color: #ffd700;">
+                                        ★★★★★
+                                        <span style="font-size: 12px; color: #718093; margin-left: 5px;">
+                                            (4.8)
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="slider home-product-one-autoplay">
-                                    <div class="home-product-one-img-dtl">
-                                        <div class="home-product-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/04.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="home-product-dtls text-start">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <h4 class="home-product-heading"><a href="shop-detail.html"
-                                                    title="">Sony A7 III Mirrorless
-                                                    Camera with 4K Video</a></h4>
-                                            <div class="product-price-cart-block">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-price">
-                                                            $159.77
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-cart">
-                                                            <a href="#" title=""><i
-                                                                    class="flaticon-shopping-cart"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-block">
-                                                <progress class="progress-bar" value="60"
-                                                    max="100"></progress>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-avail">Available: <b>79</b></div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-sold">Sold: <b>18</b></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Time remaining until the end of the offer.</p>
-                                        </div>
-                                    </div>
-                                    <div class="home-product-one-img-dtl">
-                                        <div class="home-product-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/05.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="home-product-dtls text-start">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <h4 class="home-product-heading"><a href="shop-detail.html"
-                                                    title="">Sony A7 III Mirrorless
-                                                    Camera with 4K Video</a></h4>
-                                            <div class="product-price-cart-block">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-price">
-                                                            $159.77
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-cart">
-                                                            <a href="#" title=""><i
-                                                                    class="flaticon-shopping-cart"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-block">
-                                                <progress class="progress-bar" value="60"
-                                                    max="100"></progress>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-avail">Available: <b>79</b></div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-sold">Sold: <b>18</b></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Time remaining until the end of the offer.</p>
-                                        </div>
-                                    </div>
-                                    <div class="home-product-one-img-dtl">
-                                        <div class="home-product-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/06.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="home-product-dtls text-start">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <h4 class="home-product-heading"><a href="shop-detail.html"
-                                                    title="">Sony A7 III Mirrorless
-                                                    Camera with 4K Video</a></h4>
-                                            <div class="product-price-cart-block">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-price">
-                                                            $159.77
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-cart">
-                                                            <a href="#" title=""><i
-                                                                    class="flaticon-shopping-cart"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-block">
-                                                <progress class="progress-bar" value="60"
-                                                    max="100"></progress>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-avail">Available: <b>79</b></div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-sold">Sold: <b>18</b></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Time remaining until the end of the offer.</p>
-                                        </div>
-                                    </div>
+
+                                <!-- Price Section -->
+                                <div style="margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                                    <span style="font-size: 18px; font-weight: 700; color: #2d3436;">
+                                        ${{ number_format($product->price, 2) }}
+                                    </span>
+                                    @if ($product->slashed_price)
+                                        <span style="font-size: 14px; color: #e74c3c; text-decoration: line-through;">
+                                            ${{ number_format($product->slashed_price, 2) }}
+                                        </span>
+                                    @endif
+                                </div>
+
+                                <!-- Stock Status -->
+                                <div
+                                    style="font-size: 12px; color: #718093; display: flex; justify-content: space-between; align-items: center;">
+                                    <span>
+                                        <span
+                                            style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: {{ $product->stock_availability > 0 ? '#00b894' : '#ff7675' }}; margin-right: 5px;"></span>
+                                        {{ $product->stock_availability > 0 ? 'In Stock' : 'Out of Stock' }}
+                                    </span>
+                                    <span
+                                        style="background-color: #00b894; color: white; padding: 4px 8px; border-radius: 12px; font-size: 11px;">
+                                        View Details
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="home-product-block text-center">
-                                <div class="advertise-block text-start">
-                                    <h6 class="advertise-sub-heading">Weekend Discount</h6>
-                                    <h2 class="advertise-heading">New Device coming this fall</h2>
-                                    <p>Big screens in incredibly slim designs...</p>
-                                </div>
-                                <div class="slider home-product-one-autoplay">
-                                    <div class="home-product-one-img-dtl">
-                                        <div class="home-product-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/06.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="home-product-dtls text-start">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <h4 class="home-product-heading"><a href="shop-detail.html"
-                                                    title="">Sony A7 III Mirrorless
-                                                    Camera with 4K Video</a></h4>
-                                            <div class="product-price-cart-block">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-price">
-                                                            $159.77
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-cart">
-                                                            <a href="#" title=""><i
-                                                                    class="flaticon-shopping-cart"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-block">
-                                                <progress class="progress-bar" value="60"
-                                                    max="100"></progress>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-avail">Available: <b>79</b></div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-sold">Sold: <b>18</b></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Time remaining until the end of the offer.</p>
-                                        </div>
-                                    </div>
-                                    <div class="home-product-one-img-dtl">
-                                        <div class="home-product-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/04.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="home-product-dtls text-start">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <h4 class="home-product-heading"><a href="shop-detail.html"
-                                                    title="">Sony A7 III Mirrorless
-                                                    Camera with 4K Video</a></h4>
-                                            <div class="product-price-cart-block">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-price">
-                                                            $159.77
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-cart">
-                                                            <a href="#" title=""><i
-                                                                    class="flaticon-shopping-cart"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-block">
-                                                <progress class="progress-bar" value="60"
-                                                    max="100"></progress>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-avail">Available: <b>79</b></div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-sold">Sold: <b>18</b></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Time remaining until the end of the offer.</p>
-                                        </div>
-                                    </div>
-                                    <div class="home-product-one-img-dtl">
-                                        <div class="home-product-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/02.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="home-product-dtls text-start">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <h4 class="home-product-heading"><a href="shop-detail.html"
-                                                    title="">Sony A7 III Mirrorless
-                                                    Camera with 4K Video</a></h4>
-                                            <div class="product-price-cart-block">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-price">
-                                                            $159.77
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="home-product-cart">
-                                                            <a href="#" title=""><i
-                                                                    class="flaticon-shopping-cart"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-block">
-                                                <progress class="progress-bar" value="60"
-                                                    max="100"></progress>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-avail">Available: <b>79</b></div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-6">
-                                                        <div class="product-sold">Sold: <b>18</b></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Time remaining until the end of the offer.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-lg-4">
-                    <div class="home-product-one-sidebar-block">
-                        <div class="row">
-                            <div class="col-lg-4 col-5">
-                                <div class="home-product-one-sidebar-img">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/product/07.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-7">
-                                <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                    <ul>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="total-rating">(3)</li>
-                                    </ul>
-                                    <div class="deals-product-dtls">
-                                        <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                title="">Sony A7 III Mirrorless
-                                                Camera with 4K Video</a></h4>
-                                        <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="home-product-one-sidebar-block">
-                        <div class="row">
-                            <div class="col-lg-4 col-5">
-                                <div class="home-product-one-sidebar-img">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/product/08.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-7">
-                                <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                    <ul>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="total-rating">(3)</li>
-                                    </ul>
-                                    <div class="deals-product-dtls">
-                                        <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                title="">Sony A7 III Mirrorless
-                                                Camera with 4K Video</a></h4>
-                                        <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="home-product-one-sidebar-block">
-                        <div class="row">
-                            <div class="col-lg-4 col-5">
-                                <div class="home-product-one-sidebar-img">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/product/07.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-7">
-                                <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                    <ul>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="total-rating">(3)</li>
-                                    </ul>
-                                    <div class="deals-product-dtls">
-                                        <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                title="">Sony A7 III Mirrorless
-                                                Camera with 4K Video</a></h4>
-                                        <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="home-product-one-sidebar-block">
-                        <div class="row">
-                            <div class="col-lg-4 col-5">
-                                <div class="home-product-one-sidebar-img">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/product/11.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-7">
-                                <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                    <ul>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="total-rating">(3)</li>
-                                    </ul>
-                                    <div class="deals-product-dtls">
-                                        <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                title="">Sony A7 III Mirrorless
-                                                Camera with 4K Video</a></h4>
-                                        <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
-    </section>
+
+        <!-- Shop More Button -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="{{ url('/shop') }}"
+                style="display: inline-block; padding: 12px 30px; background: linear-gradient(45deg, #6c5ce7, #a8a4e3); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: transform 0.3s ease;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Uncover More Treasures
+            </a>
+        </div>
+    </div>
     <!-- home product one end -->
     <!-- advertise one start -->
     <section id="advertise-one" class="advertise-one-main-block">
@@ -1356,289 +452,7 @@
     </section>
 
     <!-- advertise one end -->
-    <!-- home product two start -->
-    <section id="home-product-two" class="home-product-two-main-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="home-product-one-sidebar-block">
-                                <div class="row">
-                                    <div class="col-lg-4 col-5">
-                                        <div class="home-product-one-sidebar-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/12.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-7">
-                                        <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <div class="deals-product-dtls">
-                                                <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                        title="">Sony A7 III
-                                                        Mirrorless Camera with 4K Video</a></h4>
-                                                <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home-product-one-sidebar-block">
-                                <div class="row">
-                                    <div class="col-lg-4 col-5">
-                                        <div class="home-product-one-sidebar-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/09.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-7">
-                                        <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <div class="deals-product-dtls">
-                                                <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                        title="">Sony A7 III
-                                                        Mirrorless Camera with 4K Video</a></h4>
-                                                <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home-product-one-sidebar-block">
-                                <div class="row">
-                                    <div class="col-lg-4 col-5">
-                                        <div class="home-product-one-sidebar-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/13.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-7">
-                                        <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <div class="deals-product-dtls">
-                                                <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                        title="">Sony A7 III
-                                                        Mirrorless Camera with 4K Video</a></h4>
-                                                <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="home-product-one-sidebar-block">
-                                <div class="row">
-                                    <div class="col-lg-4 col-5">
-                                        <div class="home-product-one-sidebar-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/10.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-7">
-                                        <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <div class="deals-product-dtls">
-                                                <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                        title="">Sony A7 III
-                                                        Mirrorless Camera with 4K Video</a></h4>
-                                                <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home-product-one-sidebar-block">
-                                <div class="row">
-                                    <div class="col-lg-4 col-5">
-                                        <div class="home-product-one-sidebar-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/14.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-7">
-                                        <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <div class="deals-product-dtls">
-                                                <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                        title="">Sony A7 III
-                                                        Mirrorless Camera with 4K Video</a></h4>
-                                                <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home-product-one-sidebar-block">
-                                <div class="row">
-                                    <div class="col-lg-4 col-5">
-                                        <div class="home-product-one-sidebar-img">
-                                            <a href="shop-detail.html" title=""><img
-                                                    src="assets/images/home_page_4/product/15.png" class="img-fluid"
-                                                    alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-7">
-                                        <div class="home-product-one-sidebar-dtl home-product-dtls">
-                                            <ul>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="icons"><i class="flaticon-star"></i></li>
-                                                <li class="total-rating">(3)</li>
-                                            </ul>
-                                            <div class="deals-product-dtls">
-                                                <h4 class="deals-product-heading"><a href="shop-detail.html"
-                                                        title="">Sony A7 III
-                                                        Mirrorless Camera with 4K Video</a></h4>
-                                                <div class="price">$159.77 <s>$</s><s>159.77</s></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="home-product-block">
-                        <div class="slider home-product-one-autoplay">
-                            <div class="home-product-one-img-dtl">
-                                <div class="home-product-img">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/product/16.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="home-product-dtls text-center">
-                                    <ul>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="total-rating">3 reviews</li>
-                                    </ul>
-                                    <h4 class="home-product-heading"><a href="shop-detail.html" title="">HP
-                                            Victus 16-e00244AX GTX 1650
-                                            Gaming Laptop 16.1” FHD 144Hz</a></h4>
-                                    <div class="product-price-cart-block">
-                                        <div class="home-product-price">
-                                            <span>$1,246.26</span>$1,000.00
-                                        </div>
-                                    </div>
-                                    <div class="progress-block">
-                                        <progress class="progress-bar" value="60" max="100"></progress>
-                                        <div class="product-avail">the available products: <b>49</b></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home-product-one-img-dtl">
-                                <div class="home-product-img">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/product/02.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="home-product-dtls text-center">
-                                    <ul>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="total-rating">3 reviews</li>
-                                    </ul>
-                                    <h4 class="home-product-heading"><a href="shop-detail.html" title="">HP
-                                            Victus 16-e00244AX GTX 1650
-                                            Gaming Laptop 16.1” FHD 144Hz</a></h4>
-                                    <div class="product-price-cart-block">
-                                        <div class="home-product-price">
-                                            <span>$1,246.26</span>$1,000.00
-                                        </div>
-                                    </div>
-                                    <div class="progress-block">
-                                        <progress class="progress-bar" value="60" max="100"></progress>
-                                        <div class="product-avail">the available products: <b>49</b></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home-product-one-img-dtl">
-                                <div class="home-product-img">
-                                    <a href="shop-detail.html" title=""><img
-                                            src="assets/images/home_page_4/product/03.png" class="img-fluid"
-                                            alt=""></a>
-                                </div>
-                                <div class="home-product-dtls text-center">
-                                    <ul>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="icons"><i class="flaticon-star"></i></li>
-                                        <li class="total-rating">3 reviews</li>
-                                    </ul>
-                                    <h4 class="home-product-heading"><a href="shop-detail.html" title="">HP
-                                            Victus 16-e00244AX GTX 1650
-                                            Gaming Laptop 16.1” FHD 144Hz</a></h4>
-                                    <div class="product-price-cart-block">
-                                        <div class="home-product-price">
-                                            <span>$1,246.26</span>$1,000.00
-                                        </div>
-                                    </div>
-                                    <div class="progress-block">
-                                        <progress class="progress-bar" value="60" max="100"></progress>
-                                        <div class="product-avail">the available products: <b>49</b></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- home product two end -->
+
     <!-- footer start -->
     @include('footer')
     <!-- footer end -->

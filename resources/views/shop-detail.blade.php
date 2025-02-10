@@ -5,22 +5,24 @@
 
 <head>
     <meta charset="utf-8">
-    <title>| Authentic Kenyan Products | Ukwaju Market USA</title>
+    <title>{{ $product->name }} | Authentic Kenyan Products | Ukwaju Market USA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Media City">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"> <!-- favicon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
         rel="stylesheet"> <!-- google fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon_ecommerce.css"> <!-- flaticons css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css"> <!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css"> <!-- slick theme css -->
-    <link rel="stylesheet" type="text/css" href="vendor/drift/css/drift-basic.css"> <!-- drift css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/fonts/flaticon/flaticon_ecommerce.css') }}">
+    <!-- flaticons css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/slick/css/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/slick/css/slick-theme.css') }}">
+    <!-- slick theme css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/drift/css/drift-basic.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body>
@@ -29,624 +31,284 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Product Detail</li>
+                    <li class="breadcrumb-item"><a href="/shop">shop</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $product->category }}</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- breadcrumb end -->
     <!-- checkbox two start -->
-    <section id="product-dtl" class="product-dtl-main-block">
+    <div class="container" style="padding: 20px; max-width: 1350px; margin: 0 auto;">
+        <div class="product-detail"
+            style="display: flex; flex-wrap: wrap; gap: 40px; background: white; border-radius: 24px; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.08);">
+            <!-- Image Gallery Section -->
+            <div class="gallery-section" style="flex: 1; min-width: 300px;">
+                <!-- Main Image -->
+                <div id="mainImageContainer"
+                    style="position: relative; width: 100%; padding-top: 75%; overflow: hidden; border-radius: 16px; margin-bottom: 20px; background: #f8f9fa;">
+                    <img id="mainImage" src="{{ asset('storage/' . json_decode($product->images)[0]) }}"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease;"
+                        alt="{{ $product->name }}">
+                </div>
+
+                <!-- Thumbnail Navigation -->
+                <div class="thumbnail-container"
+                    style="display: flex; gap: 10px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; -ms-overflow-style: none;">
+                    <style>
+                        .thumbnail-container::-webkit-scrollbar {
+                            display: none;
+                        }
+
+                        .thumbnail {
+                            transition: all 0.3s ease;
+                        }
+
+                        .thumbnail:hover {
+                            transform: translateY(-2px);
+                            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                        }
+
+                        .thumbnail.active {
+                            border: 2px solid #00b894;
+                        }
+                    </style>
+                    @foreach (json_decode($product->images) as $index => $image)
+                        <div class="thumbnail" onclick="changeMainImage('{{ asset('storage/' . $image) }}', this)"
+                            style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; cursor: pointer; border: 2px solid transparent;">
+                            <img src="{{ asset('storage/' . $image) }}"
+                                style="width: 100%; height: 100%; object-fit: cover;"
+                                alt="{{ $product->name }} - Image {{ $index + 1 }}">
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+            <!-- Product Information Section -->
+            <div class="product-info" style="flex: 1; min-width: 300px;">
+                <div style="border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px;">
+                    <h1 style="margin: 0 0 15px 0; font-size: 28px; color: #2d3436; font-weight: 600;">
+                        {{ $product->name }}
+                    </h1>
+
+                    <!-- Category Badge -->
+                    <span
+                        style="display: inline-block; background: #f1f2f6; color: #2d3436; padding: 6px 12px; border-radius: 20px; font-size: 14px; margin-bottom: 15px;">
+                        {{ $product->category }}
+                    </span>
+
+                    <!-- Rating -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="color: #ffd700; font-size: 20px;">
+                            ★★★★★
+                            <span style="font-size: 14px; color: #718093; margin-left: 8px;">
+                                (4.8 / 5)
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Price Section -->
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                        <span style="font-size: 32px; font-weight: 700; color: #2d3436;">
+                            ${{ number_format($product->price, 2) }}
+                        </span>
+                        @if ($product->slashed_price)
+                            <span style="font-size: 20px; color: #e74c3c; text-decoration: line-through;">
+                                ${{ number_format($product->slashed_price, 2) }}
+                            </span>
+                        @endif
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin: 0 0 15px 0; font-size: 18px; color: #2d3436;">Product Details</h3>
+                    <p style="color: #636e72; line-height: 1.6; margin-bottom: 20px;">
+                        {{ $product->description }}
+                    </p>
+
+                    <!-- Specifications -->
+                    <div style="display: grid; grid-template-columns: auto 1fr; gap: 12px; font-size: 14px;">
+                        <div style="color: #718093;">Weight/Quantity:</div>
+                        <div style="color: #2d3436; font-weight: 500;">{{ $product->weight_quantity }}</div>
+
+                        <div style="color: #718093;">Availability:</div>
+                        <div
+                            style="color: {{ $product->stock_availability > 0 ? '#00b894' : '#ff7675' }}; font-weight: 500;">
+                            <span
+                                style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: {{ $product->stock_availability > 0 ? '#00b894' : '#ff7675' }}; margin-right: 5px;"></span>
+                            {{ $product->stock_availability > 0 ? 'In Stock' : 'Out of Stock' }}
+                            @if ($product->stock_availability > 0)
+                                ({{ $product->stock_availability }} units)
+                            @endif
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button
+                    style="width: 100%; background: #00b894; color: white; border: none; padding: 15px; border-radius: 12px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;"
+                    onmouseover="this.style.backgroundColor='#00a187'"
+                    onmouseout="this.style.backgroundColor='#00b894'">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    {{-- <section id="related-products" class="related-products-section mt-5">
         <div class="container">
+            <h2 class="section-title">Products You Might Like</h2>
             <div class="row">
-                <div class="col-lg-5 col-md-6">
-                    <div class="slider shop-slider-for">
-                        <div>
-                            <div class="shop-slider-zoom-img">
-                                <img class="demo-trigger" src="assets/images/home_page_4/product/09_large.png"
-                                    data-zoom="assets/images/home_page_4/product/09_large.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="shop-slider-zoom-img">
-                                <img class="demo-trigger" src="assets/images/home_page_4/product/04_large.png"
-                                    data-zoom="assets/images/home_page_4/product/04_large.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="shop-slider-zoom-img">
-                                <img class="demo-trigger" src="assets/images/home_page_4/product/13_large.png"
-                                    data-zoom="assets/images/home_page_4/product/13_large.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="shop-slider-zoom-img">
-                                <img class="demo-trigger" src="assets/images/home_page_4/product/14_large.png"
-                                    data-zoom="assets/images/home_page_4/product/14_large.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="shop-slider-zoom-img">
-                                <img class="demo-trigger" src="assets/images/home_page_4/product/05_large.png"
-                                    data-zoom="assets/images/home_page_4/product/05_large.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="shop-slider-zoom-img">
-                                <img class="demo-trigger" src="assets/images/home_page_4/product/09_large.png"
-                                    data-zoom="assets/images/home_page_4/product/09_large.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="shop-slider-zoom-img">
-                                <img class="demo-trigger" src="assets/images/home_page_4/product/04_large.png"
-                                    data-zoom="assets/images/home_page_4/product/04_large.png" alt="">
-                            </div>
+                @foreach ($relatedProducts as $related)
+                    <div class="col-md-3">
+                        <div class="product-card text-center">
+                            <img src="{{ asset('storage/' . $related->image) }}" alt="{{ $related->name }}"
+                                class="img-fluid">
+                            <h3 class="product-name">{{ $related->name }}</h3>
+                            <p class="product-price">${{ number_format($related->price, 2) }}</p>
+                            <a href="{{ URL('shop.show', $related->id) }}" class="btn btn-outline-primary">View
+                                Details</a>
                         </div>
                     </div>
-                    <div class="slider shop-slider-nav">
-                        <div>
-                            <img src="assets/images/home_page_4/product/09.png" class="img-fluid" alt="">
-                        </div>
-                        <div>
-                            <img src="assets/images/home_page_4/product/04.png" class="img-fluid" alt="">
-                        </div>
-                        <div>
-                            <img src="assets/images/home_page_4/product/13.png" class="img-fluid" alt="">
-                        </div>
-                        <div>
-                            <img src="assets/images/home_page_4/product/14.png" class="img-fluid" alt="">
-                        </div>
-                        <div>
-                            <img src="assets/images/home_page_4/product/05.png" class="img-fluid" alt="">
-                        </div>
-                        <div>
-                            <img src="assets/images/home_page_4/product/09.png" class="img-fluid" alt="">
-                        </div>
-                        <div>
-                            <img src="assets/images/home_page_4/product/04.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                    <div class="product-detail-block">
-                        <h2 class="product-dtl-title">Powering Your Mobile Experience</h2>
-                        <p>Web designing in a powerful way of just not an only professi however, in a pass Company We
-                            have a to a tendency</p>
-                        <ul class="d-flex product-star-rating">
-                            <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                            <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                            <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                            <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                            <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                        </ul>
-                        <div class="cust-rat-review">1 Customer Review</div>
-                        <div class="price">$32.00 <s>$</s><s>25.00</s></div>
-                        <ul class="product-dtl-list">
-                            <li>6.4Inch display toch sceen (1920x1180)</li>
-                            <li>50Mp Font Camera Back Camera 108Mp</li>
-                            <li>6000Mh Battry With Fast Chager</li>
-                        </ul>
-                        <div class="qty-input">
-                            <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
-                            <input class="product-qty" type="number" name="product-qty" min="0"
-                                max="10" value="1">
-                            <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
-                        </div>
-                        <div class="product-dtl-cart-btn">
-                            <a href="#" title="" class="btn btn-primary">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
-    </section>
-    <!-- checkbox two end -->
-    <!-- start comment -->
-    <section id="product-dtl-comment" class="product-dtl-comment-main-block">
-        <div class="container">
-            <div class="product-dtl-comment-block">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="product-dtl-comment-nav nav nav-pills" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-accesories-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-accesories" type="button" role="tab"
-                                    aria-controls="pills-accesories" aria-selected="true">Accesories</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-description-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-description" type="button" role="tab"
-                                    aria-controls="pills-description" aria-selected="false">Description</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-specificaton-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-specificaton" type="button" role="tab"
-                                    aria-controls="pills-specificaton" aria-selected="false">Specificaton</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-reviews" type="button" role="tab"
-                                    aria-controls="pills-reviews" aria-selected="false">Reviews</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-accesories" role="tabpanel"
-                            aria-labelledby="pills-accesories-tab" tabindex="0">
-                            <div class="accesories-block">
-                                <ul>
-                                    <li>Power Adapter</li>
-                                    <li>USB Cable</li>
-                                    <li>SIM Tray Ejector</li>
-                                    <li>Quick Start Guide</li>
-                                    <li>Warranty Card</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-description" role="tabpanel"
-                            aria-labelledby="pills-description-tab" tabindex="0">
-                            <div class="description-block">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.</p>
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
-                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
-                                    here, content here', making it look like readable English. Many desktop publishing
-                                    packages and web page editors now use Lorem Ipsum as their default model text, and a
-                                    search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-specificaton" role="tabpanel"
-                            aria-labelledby="pills-specificaton-tab" tabindex="0">
-                            <div class="specification-block">
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">General</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Brand</th>
-                                                <td>XYZ</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Model Name/Number</th>
-                                                <td>ABC2D23EFGH</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+    </section> --}}
+
+    <div class="container" style="padding: 20px; max-width: 1350px; margin: 0 auto;">
+        <!-- Section Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h2
+                style="margin: 0; font-size: 28px; font-weight: 700; background: linear-gradient(45deg, #6c5ce7, #a8a4e3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Related Products
+            </h2>
+        </div>
+
+        @if (count($relatedProducts) > 0)
+            <div class="row" style="display: flex; flex-wrap: wrap; margin: -10px;">
+                @foreach ($relatedProducts as $related)
+                    <div class="col-6 col-lg-4" style="padding: 10px; box-sizing: border-box;">
+                        <a href="{{ route('shop.detail', $related->id) }}"
+                            style="text-decoration: none; color: inherit; display: block;">
+                            <div style="background: white; border-radius: 16px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); transition: all 0.3s ease; height: 100%; overflow: hidden; position: relative; transform: translateY(0); cursor: pointer;"
+                                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.12)'"
+                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 15px rgba(0,0,0,0.08)'">
+                                <!-- Image Container -->
+                                <div
+                                    style="position: relative; width: 100%; padding-top: 75%; overflow: hidden; background: #f8f9fa; border-radius: 16px 16px 0 0;">
+                                    @php
+                                        $images = $related->images ? json_decode($related->images) : [];
+                                    @endphp
+                                    <img src="{{ isset($images[0]) ? asset('storage/' . $images[0]) : asset('images/no-image.png') }}"
+                                        alt="{{ $related->name }}"
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
                                 </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Display</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Screen Size</th>
-                                                <td>6.67 inches</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Display Type</th>
-                                                <td>Amoled</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Resolution</th>
-                                                <td>1080x2400 pixels</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Refresh Rate</th>
-                                                <td>120Hz</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Processor</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Chipset</th>
-                                                <td>Snapdragon</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">CPU</th>
-                                                <td>Octa-core</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">GPU</th>
-                                                <td>Graphics Processing Unit</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Operating System</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">OS Version</th>
-                                                <td>Android 12</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Memory & Storage</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">RAM</th>
-                                                <td>6GB</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Internal Storage</th>
-                                                <td>128GB</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Expandable Storage</th>
-                                                <td>MicroSD card support and up to how much</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Camera</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Number of lenses</th>
-                                                <td>Triple camera</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Resolution</th>
-                                                <td>48MP + 8MP + 2MP</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Features</th>
-                                                <td>Night Mode, HDR, Optical Zoom, etc.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Battery</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Battery Capacity</th>
-                                                <td>5000mAh</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Charging Speed</th>
-                                                <td>30W fast charging</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Battery Type</th>
-                                                <td>Lithium-ion, Lithium-polymer</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Connectivity</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Network Support</th>
-                                                <td>5G, 4G LTE, etc</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">SIM Type</th>
-                                                <td>Dual SIM, eSIM</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Wi-Fi</th>
-                                                <td>Wi-Fi standards supported</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Bluetooth Version</th>
-                                                <td>Bluetooth 5.1</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">NFC</th>
-                                                <td>Yes/No</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">USB Type</th>
-                                                <td>USB Type-C</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Sensors</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Fingerprint Sensor</th>
-                                                <td>In-display, side-mounted, rear-mounted</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Face Unlock</th>
-                                                <td>Yes/No</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Audio</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Speaker Type</th>
-                                                <td>Mono</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Headphone Jack</th>
-                                                <td>Yes/No</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="table-responsive">
-                                    <h3 class="based-comment-title">Build & Design</h3>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th width="30%">Weight </th>
-                                                <td>200g</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Dimensions</th>
-                                                <td>165 x 76 x 8 mm</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Material</th>
-                                                <td>Glass, Plastic, Metal</td>
-                                            </tr>
-                                            <tr>
-                                                <th width="30%">Water/Dust Resistance</th>
-                                                <td>IP68</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-reviews" role="tabpanel"
-                            aria-labelledby="pills-reviews-tab" tabindex="0">
-                            <div class="based-comment-block">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <h3 class="based-comment-title">Besed In 2 Comment</h3>
-                                        <div class="based-total-rating">
-                                            <ul class="d-flex product-star-rating">
-                                                <li><span>4.5</span></li>
-                                                <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                            </ul>
+
+                                <!-- Content Container -->
+                                <div style="padding: 14px;">
+                                    <!-- Product Name -->
+                                    <h5
+                                        style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #2d3436; line-height: 1.4; height: 44px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                        {{ $related->name }}
+                                    </h5>
+
+                                    <!-- Star Rating -->
+                                    <div style="margin-bottom: 8px;">
+                                        <div style="color: #ffd700;">
+                                            ★★★★★
+                                            <span style="font-size: 12px; color: #718093; margin-left: 5px;">
+                                                (4.8)
+                                            </span>
                                         </div>
-                                        <ul class="based-comment-list">
-                                            <li>
-                                                <ul class="d-flex product-star-rating">
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <div class="progress-block">
-                                                    <progress class="progress-bar" value="20"
-                                                        max="100"></progress>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span>01</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="based-comment-list">
-                                            <li>
-                                                <ul class="d-flex product-star-rating">
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <div class="progress-block">
-                                                    <progress class="progress-bar" value="20"
-                                                        max="100"></progress>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span>01</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="based-comment-list">
-                                            <li>
-                                                <ul class="d-flex product-star-rating">
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <div class="progress-block">
-                                                    <progress class="progress-bar" value="0"
-                                                        max="100"></progress>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span>01</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="based-comment-list">
-                                            <li>
-                                                <ul class="d-flex product-star-rating">
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <div class="progress-block">
-                                                    <progress class="progress-bar" value="0"
-                                                        max="100"></progress>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span>01</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="based-comment-list">
-                                            <li>
-                                                <ul class="d-flex product-star-rating">
-                                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                    <li class="icons"><i class="flaticon-star star-grey"></i></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <div class="progress-block">
-                                                    <progress class="progress-bar" value="0"
-                                                        max="100"></progress>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span>01</span>
-                                            </li>
-                                        </ul>
                                     </div>
-                                    <div class="col-lg-4 mt-4 mt-lg-0">
-                                        <h3 class="based-comment-title">Add Your Comment</h3>
-                                        <ul class="add-comment-block">
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-lg-3">
-                                                        <label class="form-label mt-0">Rating</label>
-                                                    </div>
-                                                    <div class="col-lg-9">
-                                                        <i class="flaticon-star star-yellow"></i>
-                                                        <i class="flaticon-star star-yellow"></i>
-                                                        <i class="flaticon-star star-yellow"></i>
-                                                        <i class="flaticon-star star-yellow"></i>
-                                                        <i class="flaticon-star star-grey"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <label for="floatingName" class="form-label">Name</label>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control"
-                                                                    id="floatingName" placeholder="Your Name">
-                                                                <label for="floatingName">Your Name</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </li>
-                                            <li>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <label for="floatingAddress"
-                                                                class="form-label">Address</label>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control"
-                                                                    id="floatingAddress" placeholder="Your Address">
-                                                                <label for="floatingAddress">Your Address</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </li>
-                                            <li>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <label for="floatingMessage"
-                                                                class="form-label">Review</label>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="form-floating">
-                                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" rows="2"></textarea>
-                                                                <label for="floatingMessage">Message</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </li>
-                                            <li class="add-comment-button"><button type="button"
-                                                    class="btn btn-primary">Add Review</button></li>
-                                        </ul>
+
+                                    <!-- Price Section -->
+                                    <div style="margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                                        <span style="font-size: 18px; font-weight: 700; color: #2d3436;">
+                                            ${{ number_format($related->price, 2) }}
+                                        </span>
+                                        @if ($related->slashed_price)
+                                            <span
+                                                style="font-size: 14px; color: #e74c3c; text-decoration: line-through;">
+                                                ${{ number_format($related->slashed_price, 2) }}
+                                            </span>
+                                        @endif
+                                    </div>
+
+                                    <!-- Stock Status -->
+                                    <div
+                                        style="font-size: 12px; color: #718093; display: flex; justify-content: space-between; align-items: center;">
+                                        <span>
+                                            <span
+                                                style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: {{ $related->stock_availability > 0 ? '#00b894' : '#ff7675' }}; margin-right: 5px;"></span>
+                                            {{ $related->stock_availability > 0 ? 'In Stock' : 'Out of Stock' }}
+                                        </span>
+                                        <span
+                                            style="background-color: #00b894; color: white; padding: 4px 8px; border-radius: 12px; font-size: 11px;">
+                                            View Details
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="customers-review-block">
-                                <ul class="d-flex product-star-rating">
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                </ul>
-                                <p>
-                                    Ecommerce is the buying and selling of goods and services over the internet. It
-                                    revolutionizes the way businesses operate, providing convenience and access to a
-                                    global market. Ecommerce platforms enable online stores to showcase products,
-                                    process payments, and deliver purchases to customers' doorsteps Ecommerce is the
-                                    buying and selling of goods and services
-                                </p>
-                                <h4 class="customer-name">Salim Mana <span class="date">25June 2025</span></h4>
-                            </div>
-                            <div class="customers-review-block">
-                                <ul class="d-flex product-star-rating">
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                    <li class="icons"><i class="flaticon-star star-yellow"></i></li>
-                                </ul>
-                                <p>
-                                    Ecommerce is the buying and selling of goods and services over the internet. It
-                                    revolutionizes the way businesses operate, providing convenience and access to a
-                                    global market. Ecommerce platforms enable online stores to showcase products,
-                                    process payments, and deliver purchases to customers' doorsteps Ecommerce is the
-                                    buying and selling of goods and services
-                                </p>
-                                <h4 class="customer-name">Nazim On <span class="date">25June 2025</span></h4>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                </div>
+                @endforeach
             </div>
+        @else
+            <!-- Empty State Message -->
+            <div
+                style="background: white; border-radius: 16px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); padding: 40px 20px; text-align: center; margin-bottom: 40px;">
+                <div style="margin-bottom: 20px;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#a8a4e3"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                </div>
+                <h3 style="margin: 0 0 10px 0; font-size: 20px; color: #2d3436;">No Related Products Found</h3>
+                <p style="margin: 0 0 20px 0; color: #718093;">Explore our shop to discover more amazing products!</p>
+            </div>
+        @endif
+
+        <!-- Shop More Button -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="{{ url('/shop') }}"
+                style="display: inline-block; padding: 12px 30px; background: linear-gradient(45deg, #6c5ce7, #a8a4e3); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: transform 0.3s ease;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Shop More
+            </a>
         </div>
-    </section>
+    </div>
+
+    <script>
+        function changeMainImage(newSrc, thumbnailElement) {
+            // Update main image
+            const mainImage = document.getElementById('mainImage');
+            mainImage.style.opacity = '0';
+
+            setTimeout(() => {
+                mainImage.src = newSrc;
+                mainImage.style.opacity = '1';
+            }, 300);
+
+            // Update thumbnail active state
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            thumbnailElement.classList.add('active');
+        }
+
+        // Set first thumbnail as active on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstThumbnail = document.querySelector('.thumbnail');
+            if (firstThumbnail) {
+                firstThumbnail.classList.add('active');
+            }
+        });
+    </script>
+
+
     <!-- end comment -->
     <!-- footer start -->
     @include('footer')

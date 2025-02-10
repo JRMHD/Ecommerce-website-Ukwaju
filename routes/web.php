@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Models\Product;
+use App\Http\Controllers\ShopController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -44,3 +47,13 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+
+
+Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
+    Route::resource('products', ProductController::class);
+});
+
+
+Route::get('/shop', [ShopController::class, 'index'])->name('shop');
+Route::get('/shop/{product}', [ShopController::class, 'show'])->name('shop.detail');
+Route::get('/', [ShopController::class, 'home']);

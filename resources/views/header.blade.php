@@ -58,23 +58,50 @@
                    </div>
                </div>
                <div class="col-xl-7 col-lg-6 col-md-7">
-                   <div class="header-search-block">
-                       <div class="input-group">
-                           <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                               All<i class="flaticon-down-arrow"></i>
+                   <div style="width: 100%; max-width: 600px; margin: 0 auto;">
+                       <form action="{{ route('shop') }}" method="GET" style="position: relative;">
+                           <input type="text" name="search" placeholder="Search for products..."
+                               value="{{ request()->query('search') }}"
+                               style="
+                    width: 100%;
+                    padding: 12px 45px 12px 20px;
+                    border: 2px solid #edf2f7;
+                    border-radius: 12px;
+                    font-size: 14px;
+                    color: #2d3748;
+                    background: white;
+                    transition: all 0.2s ease;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+                "
+                               onFocus="this.style.borderColor='#3498db'; this.style.boxShadow='0 2px 15px rgba(0,0,0,0.06)'"
+                               onBlur="this.style.borderColor='#edf2f7'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)'">
+                           <button type="submit"
+                               style="
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border: none;
+                    background: none;
+                    padding: 8px;
+                    cursor: pointer;
+                    color: #718096;
+                    border-radius: 8px;
+                    transition: all 0.2s ease;
+                "
+                               onmouseover="this.style.color='#3498db'; this.style.background='#f7fafc'"
+                               onmouseout="this.style.color='#718096'; this.style.background='transparent'">
+                               <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"></circle>
+                                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                               </svg>
                            </button>
-                           <ul class="dropdown-menu">
-                               <li><a class="dropdown-item" href="#" title="">Fashion</a></li>
-                               <li><a class="dropdown-item" href="#" title="">Accessories</a></li>
-                               <li><a class="dropdown-item" href="#" title="">Electronics</a></li>
-                           </ul>
-                           <input type="text" class="form-control" placeholder="Search for products...">
-                           <a href="#" title="" class="search-icon"><i
-                                   class="flaticon-search-interface-symbol"></i></a>
-                       </div>
+                       </form>
                    </div>
                </div>
+
                <div class="col-xl-3 col-lg-4 col-md-3">
                    <div class="header-right-block">
                        <ul>
@@ -142,12 +169,17 @@
                            <i class="flaticon-hamburger"></i> All Categories <i class="flaticon-down-arrow"></i>
                        </button>
                        <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="#" title="">Smartphones</a></li>
-                           <li><a class="dropdown-item" href="#" title="">Tablets</a></li>
-
-                           <li><a class="dropdown-item" href="#" title="">Bluetooth earphones</a></li>
+                           @foreach ($categories as $category)
+                               <li>
+                                   <a class="dropdown-item"
+                                       href="{{ route('shop', ['search' => $category->category]) }}">
+                                       {{ $category->category }}
+                                   </a>
+                               </li>
+                           @endforeach
                        </ul>
                    </div>
+
                </div>
                <div class="col-lg-7 col-md-3">
                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
