@@ -132,21 +132,24 @@
                                @endauth
                            </li>
                            <li class="wishlist-icon-block">
-                               <a href="wishlist.html" title="">
+                               <a href="/wishlist" title="">
                                    <i class="flaticon-love"></i>
-                                   <span class="icon-badge">1</span>
+                                   <span class="icon-badge">{{ $wishlistCount }}</span>
                                </a>
                            </li>
                            <li>
-                               <a href="cart.html" title="">
+                               <a href="/cart" title="">
                                    <div class="cart-icon-block">
                                        <div class="cart-icon">
                                            <i class="flaticon-shopping-cart"></i>
-                                           <span class="icon-badge">0</span>
+                                           <span
+                                               class="icon-badge">{{ session('cart') ? count(session('cart')) : 0 }}</span>
                                        </div>
                                        <div class="cart-dtl">
                                            <span>Total</span>
-                                           <h6 class="cart-price">$0.00</h6>
+                                           <h6 class="cart-price">
+                                               ${{ number_format(session('cart') ? array_sum(array_map(fn($item) => $item['price'] * $item['quantity'], session('cart'))) : 0, 2) }}
+                                           </h6>
                                        </div>
                                    </div>
                                </a>
@@ -291,15 +294,21 @@
                                <i class="flaticon-hamburger"></i>
                            </button>
                            <ul class="dropdown-menu">
-                               <li><a class="dropdown-item" href="#" title="">Smartphones</a></li>
-
+                               @foreach ($categories as $category)
+                                   <li>
+                                       <a class="dropdown-item"
+                                           href="{{ route('shop', ['search' => $category->category]) }}">
+                                           {{ $category->category }}
+                                       </a>
+                                   </li>
+                               @endforeach
                            </ul>
                        </div>
                    </div>
                    <div class="col">
                        <div class="wishlist-icon-block">
-                           <a href="wishlist.html" title=""><i class="flaticon-love"></i><span
-                                   class="icon-badge">1</span></a>
+                           <a href="/wishlist" title=""><i class="flaticon-love"></i><span
+                                   class="icon-badge">{{ $wishlistCount }}</span></a>
                        </div>
                    </div>
                    <div class="col">
@@ -308,8 +317,8 @@
                    <div class="col">
                        <div class="cart-icon-block">
                            <div class="cart-icon">
-                               <a href="cart.html" title=""><i class="flaticon-shopping-cart"></i><span
-                                       class="icon-badge">0</span></a>
+                               <a href="/cart" title=""><i class="flaticon-shopping-cart"></i><span
+                                       class="icon-badge">{{ session('cart') ? count(session('cart')) : 0 }}</span></a>
                            </div>
                        </div>
                    </div>
@@ -337,3 +346,14 @@
            </div>
        </div>
    </div>
+   <script>
+       function updateCartHeader() {
+           fetch("{{ route('cart.index') }}")
+               .then(response => response.json())
+               .then(data => {
+                   document.getElementById('cart-count').textContent = data.cart_count;
+                   document.getElementById('cart-total').textContent = `$${data.cart_total.toFixed(2)}`;
+               })
+               .catch(error => console.error('Error updating cart:', error));
+       }
+   </script>

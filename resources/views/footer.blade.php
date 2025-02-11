@@ -41,13 +41,17 @@
                              <div class="footer-widget">
                                  <h3 class="footer-widget-heading">Quick Links</h3>
                                  <ul class="footer-menu">
-                                     <li><a href="/login" title="">Login</a></li>
-                                     <li><a href="/register" title="">Register</a></li>
-
-                                     <li><a href="/policy" title="">Terms and Conditions</a></li>
+                                     @auth
+                                         <li><a href="{{ route('dashboard') }}" title="">Dashboard</a></li>
+                                     @else
+                                         <li><a href="{{ route('login') }}" title="">Login</a></li>
+                                         <li><a href="{{ route('register') }}" title="">Register</a></li>
+                                     @endauth
+                                     <li><a href="{{ route('policy') }}" title="">Terms and Conditions</a></li>
                                  </ul>
                              </div>
                          </div>
+
                          <div class="col-lg-4 col-md-4">
                              <div class="footer-widget">
                                  <h3 class="footer-widget-heading">Contact</h3>

@@ -85,12 +85,18 @@
                     </div>
                     <div class="col-xl-8 col-lg-6">
                         <ul class="discount-img">
-                            <li class="image-one"><img src="assets/images/home_page_4/breadcrumb/01.png"
-                                    class="img-fluid" alt="Kenyan Spices"></li>
-                            <li class="image-two"><img src="assets/images/home_page_4/breadcrumb/02.png"
-                                    class="img-fluid" alt="Tea & Coffee"></li>
-                            <li class="image-three"><img src="assets/images/home_page_4/breadcrumb/03.png"
-                                    class="img-fluid" alt="Traditional Snacks"></li>
+                            <li class="image-one">
+                                <img src="assets/images/home_page_4/breadcrumb/01.png" class="img-fluid"
+                                    alt="Kenyan Spices" style="max-width: 250px; height: auto;">
+                            </li>
+                            <li class="image-two">
+                                <img src="assets/images/home_page_4/breadcrumb/02.png" class="img-fluid"
+                                    alt="Tea & Coffee" style="max-width: 250px; height: auto;">
+                            </li>
+                            <li class="image-three">
+                                <img src="assets/images/home_page_4/breadcrumb/03.png" class="img-fluid"
+                                    alt="Traditional Snacks" style="max-width: 250px; height: auto;">
+                            </li>
                         </ul>
                     </div>
                 </div>

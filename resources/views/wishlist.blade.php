@@ -37,64 +37,178 @@
     </div>
     <!-- breadcrumb end -->
     <!-- wishlist start -->
-    <section id="wishlist" class="wishlist-main-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="wishlist-title text-center">My wishlist</h3>
-                    <div class="table-responsive">
-                        <table class="table table-bordered cart-table">
-                            <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th class="text-center">Unit Price</th>
-                                    <th class="text-center">Quantity</th>
-                                    <th class="text-center">Subtotal</th>
-                                    <th class="text-center">Remove</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="wishlist-product-block">
-                                            <div class="wishlist-product-img">
-                                                <a href="#" title=""><img
-                                                        src="assets/images/home_page_4/cart/01.png" class="img-fluid"
-                                                        alt=""></a>
-                                            </div>
-                                            <div class="wishlist-product-dtl">
-                                                <a href="#" title="">
-                                                    <h4 class="wishlist-product-title">Internal Operations
-                                                        Administrator</h4>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="rate"><a href="#" title="">$33.00</a></td>
-                                    <td>
-                                        <div class="qty-input">
-                                            <button class="qty-count qty-count--minus" data-action="minus"
-                                                type="button">-</button>
-                                            <input class="product-qty" type="number" name="product-qty" min="0"
-                                                max="10" value="1">
-                                            <button class="qty-count qty-count--add" data-action="add"
-                                                type="button">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="rate"><a href="#" title="">$33.00</a></td>
-                                    <td>
-                                        <div class="wishlist-delete-icon">
-                                            <i class="flaticon-close"></i>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+    <div style="padding: 20px; max-width: 1400px; margin: 0 auto;">
+        @if (session('success'))
+            <div
+                style="background-color: #d4edda; color: #155724; padding: 10px; border: 1px solid #c3e6cb; border-radius: 4px; margin-bottom: 20px;">
+                {{ session('success') }}
             </div>
+        @endif
+
+        <!-- Page Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 1.875rem; font-weight: 600; margin: 0;">
+                <i class="fas fa-heart" style="margin-right: 0.5rem;"></i> My Wishlist
+            </h2>
+            <a href="{{ route('shop') }}"
+                style="background-color: #4299e1; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; text-decoration: none; display: inline-flex; align-items: center; transition: background-color 0.2s;">
+                <i class="fas fa-arrow-left" style="margin-right: 0.5rem;"></i> Continue Shopping
+            </a>
         </div>
-    </section>
+
+        @if (session('wishlist') && count(session('wishlist')) > 0)
+            <!-- Move All to Cart Button -->
+            <div style="margin-bottom: 1.5rem;">
+                <button onclick="moveAllToCart()"
+                    style="background-color: #48bb78; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; border: none; cursor: pointer; display: inline-flex; align-items: center; transition: background-color 0.2s;">
+                    <i class="fas fa-shopping-cart" style="margin-right: 0.5rem;"></i> Move All to Cart
+                </button>
+            </div>
+
+            <!-- Wishlist Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                @foreach (session('wishlist') as $id => $item)
+                    <div
+                        style="background-color: white; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); overflow: hidden;">
+                        <img src="{{ asset('storage/' . $item['image']) }}" alt="{{ $item['name'] }}"
+                            style="width: 100%; height: 200px; object-fit: cover;">
+
+                        <div style="padding: 1.5rem;">
+                            <h3 style="color: #2d3748; font-size: 1.25rem; font-weight: 600; margin: 0 0 0.5rem;">
+                                {{ $item['name'] }}
+                            </h3>
+                            <p style="color: #4a5568; font-size: 1.25rem; font-weight: 600; margin: 0 0 1rem;">
+                                ${{ number_format($item['price'], 2) }}
+                            </p>
+
+                            <div style="display: flex; gap: 0.5rem;">
+                                <button onclick="moveToCart({{ $id }})"
+                                    style="background-color: #4299e1; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; border: none; cursor: pointer; flex: 1; display: inline-flex; align-items: center; justify-content: center; transition: background-color 0.2s;">
+                                    <i class="fas fa-cart-plus" style="margin-right: 0.5rem;"></i> Move to Cart
+                                </button>
+                                <button onclick="removeFromWishlist({{ $id }})"
+                                    style="background-color: #f56565; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; border: none; cursor: pointer; flex: 1; display: inline-flex; align-items: center; justify-content: center; transition: background-color 0.2s;">
+                                    <i class="fas fa-trash-alt" style="margin-right: 0.5rem;"></i> Remove
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            <!-- Wishlist Summary -->
+        @else
+            <div
+                style="background-color: white; padding: 3rem; text-align: center; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
+                <i class="fas fa-heart" style="font-size: 3rem; color: #a0aec0; margin-bottom: 1rem;"></i>
+                <p style="color: #4a5568; margin-bottom: 1rem;">Your wishlist is empty.</p>
+                <a href="{{ route('shop') }}"
+                    style="background-color: #4299e1; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; text-decoration: none; display: inline-flex; align-items: center; transition: background-color 0.2s;">
+                    <i class="fas fa-store" style="margin-right: 0.5rem;"></i> Continue Shopping
+                </a>
+            </div>
+        @endif
+    </div>
+
+    @push('styles')
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    @endpush
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function removeFromWishlist(productId) {
+            Swal.fire({
+                title: "Are you sure?",
+                text: "This item will be removed from your wishlist!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#3085d6",
+                confirmButtonText: "Yes, remove it!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    fetch(`/wishlist/remove/${productId}`, {
+                            method: 'DELETE',
+                            headers: {
+                                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            Swal.fire({
+                                title: "Removed!",
+                                text: data.message,
+                                icon: "success",
+                                timer: 1500,
+                                showConfirmButton: false
+                            });
+                            setTimeout(() => location.reload(), 1600);
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+            });
+        }
+
+        function moveToCart(productId) {
+            fetch(`/wishlist/move-to-cart/${productId}`, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    Swal.fire({
+                        title: "Success!",
+                        text: data.message,
+                        icon: "success",
+                        timer: 1500,
+                        showConfirmButton: false
+                    });
+                    setTimeout(() => location.reload(), 1600);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function moveAllToCart() {
+            Swal.fire({
+                title: "Move all items to cart?",
+                text: "All wishlist items will be moved to your cart.",
+                icon: "question",
+                showCancelButton: true,
+                confirmButtonColor: "#28a745",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, move all!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    fetch('/wishlist/move-all-to-cart', {
+                            method: 'POST',
+                            headers: {
+                                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            Swal.fire({
+                                title: "Moved!",
+                                text: data.message,
+                                icon: "success",
+                                timer: 1500,
+                                showConfirmButton: false
+                            });
+                            setTimeout(() => location.reload(), 1600);
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+            });
+        }
+    </script>
+
     <!-- wishlist end -->
     <!-- footer start -->
     @include('footer')
@@ -108,73 +222,6 @@
     <script src="vendor/slick/js/slick.js"></script> <!-- slick js -->
     <script src="vendor/range_slider/js/jquery-ui.min.js"></script> <!-- rang slider js -->
     <script src="assets/js/theme_one.js"></script> <!-- theme js -->
-    <!-- quantity count start -->
-    <script>
-        var QtyInput = (function() {
-            var $qtyInputs = $(".qty-input");
-
-            if (!$qtyInputs.length) {
-                return;
-            }
-
-            var $inputs = $qtyInputs.find(".product-qty");
-            var $countBtn = $qtyInputs.find(".qty-count");
-            var qtyMin = parseInt($inputs.attr("min"));
-            var qtyMax = parseInt($inputs.attr("max"));
-
-            $inputs.change(function() {
-                var $this = $(this);
-                var $minusBtn = $this.siblings(".qty-count--minus");
-                var $addBtn = $this.siblings(".qty-count--add");
-                var qty = parseInt($this.val());
-
-                if (isNaN(qty) || qty <= qtyMin) {
-                    $this.val(qtyMin);
-                    $minusBtn.attr("disabled", true);
-                } else {
-                    $minusBtn.attr("disabled", false);
-
-                    if (qty >= qtyMax) {
-                        $this.val(qtyMax);
-                        $addBtn.attr('disabled', true);
-                    } else {
-                        $this.val(qty);
-                        $addBtn.attr('disabled', false);
-                    }
-                }
-            });
-
-            $countBtn.click(function() {
-                var operator = this.dataset.action;
-                var $this = $(this);
-                var $input = $this.siblings(".product-qty");
-                var qty = parseInt($input.val());
-
-                if (operator == "add") {
-                    qty += 1;
-                    if (qty >= qtyMin + 1) {
-                        $this.siblings(".qty-count--minus").attr("disabled", false);
-                    }
-
-                    if (qty >= qtyMax) {
-                        $this.attr("disabled", true);
-                    }
-                } else {
-                    qty = qty <= qtyMin ? qtyMin : (qty -= 1);
-
-                    if (qty == qtyMin) {
-                        $this.attr("disabled", true);
-                    }
-
-                    if (qty < qtyMax) {
-                        $this.siblings(".qty-count--add").attr("disabled", false);
-                    }
-                }
-
-                $input.val(qty);
-            });
-        })();
-    </script>
 
 </body>
 <!-- body end -->

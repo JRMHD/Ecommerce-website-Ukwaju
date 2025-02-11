@@ -290,9 +290,9 @@
                     <div class="advertise-block">
                         <div class="row">
                             <div class="col-lg-7 col-md-7">
-                                <h6 class="advertise-sub-heading">Weekend Discount</h6>
-                                <h2 class="advertise-heading">Olympus Mark II Mirrorless Camera</h2>
-                                <p>Mirrorless Camera with 4K Video</p>
+                                <h6 class="advertise-sub-heading">Special Offer</h6>
+                                <h2 class="advertise-heading">Authentic Kenyan Flavors</h2>
+                                <p>Get a taste of home with our handpicked selection of Kenyan food products.</p>
                                 <a href="/shop" title="" class="btn btn-primary">Shop Now<i
                                         class="flaticon-right-arrows"></i></a>
                             </div>
@@ -300,7 +300,7 @@
                                 <div class="advertise-img text-lg-end text-center">
                                     <a href="#" title=""><img
                                             src="assets/images/home_page_4/advertise/01.png" class="img-fluid"
-                                            alt=""></a>
+                                            alt="Kenyan Food Products"></a>
                                 </div>
                             </div>
                         </div>
@@ -311,9 +311,9 @@
                     <div class="advertise-block">
                         <div class="row">
                             <div class="col-lg-7 col-md-7">
-                                <h6 class="advertise-sub-heading">Weekend Discount</h6>
-                                <h2 class="advertise-heading">Olympus Mark II Mirrorless Camera</h2>
-                                <p>Mirrorless Camera with 4K Video</p>
+                                <h6 class="advertise-sub-heading">Limited Time Deal</h6>
+                                <h2 class="advertise-heading">Handcrafted Kenyan Treasures</h2>
+                                <p>Bring a touch of Kenyan culture into your home with unique handmade items.</p>
                                 <a href="/shop" title="" class="btn btn-primary">Shop Now<i
                                         class="flaticon-right-arrows"></i></a>
                             </div>
@@ -321,8 +321,7 @@
                                 <div class="advertise-img text-lg-end text-center">
                                     <a href="#" title=""><img
                                             src="assets/images/home_page_4/advertise/02.png" class="img-fluid"
-                                            alt=""></a>
-
+                                            alt="Kenyan Handicrafts"></a>
                                 </div>
                             </div>
                         </div>
@@ -332,6 +331,7 @@
             </div>
         </div>
     </section>
+
     <!-- advertise end -->
     <div class="container" style="padding: 20px; max-width: 1350px; margin: 0 auto;">
         <!-- Section Header -->

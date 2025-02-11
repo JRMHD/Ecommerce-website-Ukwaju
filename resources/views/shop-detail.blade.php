@@ -145,16 +145,145 @@
                     </div>
                 </div>
 
-                <!-- Add to Cart Button -->
-                <button
-                    style="width: 100%; background: #00b894; color: white; border: none; padding: 15px; border-radius: 12px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;"
-                    onmouseover="this.style.backgroundColor='#00a187'"
-                    onmouseout="this.style.backgroundColor='#00b894'">
+                <button onclick="addToCart({{ $product->id }})"
+                    style="width: 100%; background: linear-gradient(135deg, #00b894, #00d1a0); color: white; border: none; padding: 16px; border-radius: 16px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,184,148,0.2); display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 16px;"
+                    onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0,184,148,0.3)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,184,148,0.2)'">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
                     Add to Cart
                 </button>
+
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+                <script>
+                    let isLoggedIn = @json(auth()->check()); // Get login status from Laravel
+
+                    function addToCart(productId) {
+                        if (!isLoggedIn) {
+                            Swal.fire({
+                                icon: 'warning',
+                                title: 'Not Logged In',
+                                text: 'You need to log in to add items to your cart.',
+                                confirmButtonText: 'Login',
+                                showCancelButton: true,
+                                cancelButtonText: 'Cancel'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.href = "{{ route('login') }}"; // Redirect to login page
+                                }
+                            });
+                            return;
+                        }
+
+                        fetch(`/cart/add/${productId}`, {
+                                method: "POST",
+                                headers: {
+                                    "X-CSRF-TOKEN": "{{ csrf_token() }}",
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify({})
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Success!',
+                                    text: 'Item added to cart',
+                                    timer: 1500,
+                                    showConfirmButton: false
+                                });
+                            })
+                            .catch(error => console.error("Error:", error));
+                    }
+                </script>
+
+                <!-- Secondary Actions Grid -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                    <!-- Wishlist Button -->
+                    <button onclick="addToWishlist({{ $product->id }})"
+                        style="background: linear-gradient(135deg, #ff6b6b, #ff8787); color: white; border: none; padding: 14px; border-radius: 16px; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,107,107,0.2); display: flex; align-items: center; justify-content: center; gap: 8px;"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(255,107,107,0.3)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(255,107,107,0.2)'">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                        Wishlist
+                    </button>
+
+                    <!-- SweetAlert2 -->
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+                    <script>
+                        function addToWishlist(productId) {
+                            fetch(`/wishlist/add/${productId}`, {
+                                    method: 'POST',
+                                    headers: {
+                                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                                        'Content-Type': 'application/json'
+                                    }
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                    Swal.fire({
+                                        title: "Added!",
+                                        text: data.message,
+                                        icon: "success",
+                                        timer: 1500,
+                                        showConfirmButton: false
+                                    });
+                                })
+                                .catch(error => {
+                                    Swal.fire({
+                                        title: "Error!",
+                                        text: "Something went wrong. Please try again.",
+                                        icon: "error",
+                                        confirmButtonText: "OK"
+                                    });
+                                    console.error('Error:', error);
+                                });
+                        }
+                    </script>
+
+
+
+                    <!-- View Cart Link -->
+                    <a href="{{ url('cart') }}"
+                        style="background: linear-gradient(135deg, #4834d4, #686de0); color: white; text-decoration: none; padding: 14px; border-radius: 16px; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(72,52,212,0.2); display: flex; align-items: center; justify-content: center; gap: 8px;"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(72,52,212,0.3)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(72,52,212,0.2)'">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        View Cart
+                    </a>
+                </div>
+
+                <!-- View Wishlist Link -->
+                <a href="{{ url('wishlist') }}"
+                    style="display: block; text-align: center; margin-top: 16px; color: #718096; text-decoration: none; font-size: 14px; font-weight: 500; transition: all 0.3s ease; padding: 8px;"
+                    onmouseover="this.style.color='#4a5568'; this.style.transform='translateY(-1px)'"
+                    onmouseout="this.style.color='#718096'; this.style.transform='translateY(0)'">
+                    View Wishlist →
+                </a>
             </div>
+
+
+
         </div>
     </div>
+    </div>
+
     {{-- <section id="related-products" class="related-products-section mt-5">
         <div class="container">
             <h2 class="section-title">Products You Might Like</h2>

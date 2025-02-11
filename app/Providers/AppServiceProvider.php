@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Session;
 use App\Models\Product;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,10 +24,18 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        // Share categories across all views
         View::composer('*', function ($view) {
+            // Get unique categories
             $categories = Product::select('category')->distinct()->get();
-            $view->with('categories', $categories);
+
+            // Get wishlist count from session
+            $wishlistCount = count(Session::get('wishlist', []));
+
+            // Share data with all views
+            $view->with([
+                'categories' => $categories,
+                'wishlistCount' => $wishlistCount
+            ]);
         });
     }
 }

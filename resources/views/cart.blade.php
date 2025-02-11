@@ -35,161 +35,196 @@
         </div>
     </div>
     <!-- breadcrumb end -->
-    <!-- wishlist start -->
-    <section id="wishlist" class="wishlist-main-block cart-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="table-responsive">
-                        <table class="table table-bordered cart-table">
-                            <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th class="text-center">Unit Price</th>
-                                    <th class="text-center">Quantity</th>
-                                    <th class="text-center">Subtotal</th>
-                                    <th class="text-center">Remove</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="wishlist-product-block">
-                                            <div class="wishlist-product-img">
-                                                <a href="#" title=""><img
-                                                        src="assets/images/home_page_4/cart/01.png" class="img-fluid"
-                                                        alt=""></a>
-                                            </div>
-                                            <div class="wishlist-product-dtl">
-                                                <a href="#" title="">
-                                                    <h4 class="wishlist-product-title">Internal Operations Administrator
-                                                    </h4>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="rate"><a href="#" title="">$33.00</a></td>
-                                    <td>
-                                        <div class="qty-input">
-                                            <button class="qty-count qty-count--minus" data-action="minus"
-                                                type="button">-</button>
-                                            <input class="product-qty" type="number" name="product-qty" min="0"
-                                                max="10" value="1">
-                                            <button class="qty-count qty-count--add" data-action="add"
-                                                type="button">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="rate"><a href="#" title="">$33.00</a></td>
-                                    <td>
-                                        <div class="wishlist-delete-icon">
-                                            <i class="flaticon-close"></i>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+    <!-- cart start -->
+    <div style="padding: 20px; max-width: 1400px; margin: 0 auto;">
+        @if (session('success'))
+            <div
+                style="background-color: #d4edda; color: #155724; padding: 10px; border: 1px solid #c3e6cb; border-radius: 4px; margin-bottom: 20px;">
+                {{ session('success') }}
             </div>
+        @endif
+
+        <!-- Page Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h2 style="color: #2d3748; font-size: 1.875rem; font-weight: 600; margin: 0;">
+                <i class="fas fa-shopping-cart" style="margin-right: 0.5rem;"></i> Shopping Cart
+            </h2>
+            <a href="{{ route('shop') }}"
+                style="background-color: #4299e1; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; text-decoration: none; display: inline-flex; align-items: center; transition: background-color 0.2s;">
+                <i class="fas fa-arrow-left" style="margin-right: 0.5rem;"></i> Continue Shopping
+            </a>
         </div>
-    </section>
-    <!-- wishlist end -->
-    <!-- cart start-->
-    <section id="cart" class="cart-main-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="cart-shipping-block">
-                        <form>
-                            <div class="form-group coupon-form">
-                                <input type="text" class="form-control" id="text" placeholder="Coupon code">
-                                <button type="button" class="btn btn-primary">Apply</button>
-                            </div>
-                        </form>
-                        <div class="calculate-shipping-block">
-                            <h4 class="shipping-heading">Calculate Shipping</h4>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="country"
-                                        placeholder="United States (US)">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="state"
-                                        placeholder="California">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="city" placeholder="City">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="'pin"
-                                        placeholder="Postcode / ZIP">
-                                </div>
-                                <button type="button" class="btn btn-primary">Update</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="cart-total-amt-block">
-                        <h4 class="total-heading">Cart Total</h4>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td class="">Subtotal</td>
-                                        <td class="price text-end">$33.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">Shipping</td>
-                                        <td class="float-end">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio"
-                                                    name="flexRadioDefault1" id="flexRadioDefault1" checked>
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    Flat rate: <strong>$5.00</strong>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio"
-                                                    name="flexRadioDefault1" id="flexRadioDefault2">
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    Free shipping
-                                                </label>
-                                            </div>
-                                            Shipping to <strong>CA.</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="total-head">Total</td>
-                                        <td class="price text-end">$38.00</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <a href="checkout.html" title="" class="btn btn-primary">Proceed to checkout</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="cart-button">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="continue-btn">
-                                    <a href="shop-filter.html" title="" class="btn btn-primary">Continue
-                                        Shopping <i class="flaticon-right-arrows"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="update-btn">
-                                    <button class="btn btn-primary" type="button"><i class="flaticon-reload"></i>
-                                        Update Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        @if (session('cart') && count(session('cart')) > 0)
+            <!-- Cart Table -->
+            <div
+                style="background-color: white; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                    <thead>
+                        <tr style="background-color: #f7fafc;">
+                            <th
+                                style="padding: 1rem; text-align: left; color: #4a5568; font-weight: 600; border-bottom: 1px solid #e2e8f0;">
+                                <i class="fas fa-box" style="margin-right: 0.5rem;"></i> Product
+                            </th>
+                            <th
+                                style="padding: 1rem; text-align: left; color: #4a5568; font-weight: 600; border-bottom: 1px solid #e2e8f0;">
+                                <i class="fas fa-dollar-sign" style="margin-right: 0.5rem;"></i> Price
+                            </th>
+                            <th
+                                style="padding: 1rem; text-align: center; color: #4a5568; font-weight: 600; border-bottom: 1px solid #e2e8f0;">
+                                <i class="fas fa-sort-amount-up" style="margin-right: 0.5rem;"></i> Quantity
+                            </th>
+                            <th
+                                style="padding: 1rem; text-align: left; color: #4a5568; font-weight: 600; border-bottom: 1px solid #e2e8f0;">
+                                <i class="fas fa-calculator" style="margin-right: 0.5rem;"></i> Total
+                            </th>
+                            <th
+                                style="padding: 1rem; text-align: left; color: #4a5568; font-weight: 600; border-bottom: 1px solid #e2e8f0;">
+                                <i class="fas fa-cog" style="margin-right: 0.5rem;"></i> Actions
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        @php $total = 0; @endphp
+                        @foreach (session('cart') as $id => $item)
+                            @php $total += $item['price'] * $item['quantity']; @endphp
+                            <tr data-id="{{ $id }}" style="transition: background-color 0.2s;">
+                                <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">
+                                    <div style="display: flex; align-items: center;">
+                                        <img src="{{ asset('storage/' . $item['image']) }}" alt="{{ $item['name'] }}"
+                                            style="width: 80px; height: 80px; object-fit: cover; border-radius: 0.375rem; margin-right: 1rem;">
+                                        <span style="color: #2d3748; font-weight: 500;">{{ $item['name'] }}</span>
+                                    </div>
+                                </td>
+                                <td
+                                    style="padding: 1rem; border-bottom: 1px solid #e2e8f0; color: #2d3748; font-weight: 600;">
+                                    ${{ number_format($item['price'], 2) }}
+                                </td>
+                                <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0; text-align: center;">
+                                    <div style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                        <button onclick="updateCart({{ $id }}, -1)"
+                                            style="background-color: #e2e8f0; color: #4a5568; width: 30px; height: 30px; border-radius: 0.375rem; border: none; cursor: pointer; transition: background-color 0.2s;">
+                                            -
+                                        </button>
+                                        <input type="number" value="{{ $item['quantity'] }}" min="1"
+                                            style="width: 60px; text-align: center; padding: 0.25rem; border: 1px solid #e2e8f0; border-radius: 0.375rem;"
+                                            class="cart-qty"
+                                            onchange="updateCart({{ $id }}, this.value, true)">
+                                        <button onclick="updateCart({{ $id }}, 1)"
+                                            style="background-color: #e2e8f0; color: #4a5568; width: 30px; height: 30px; border-radius: 0.375rem; border: none; cursor: pointer; transition: background-color 0.2s;">
+                                            +
+                                        </button>
+                                    </div>
+                                </td>
+                                <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0; color: #2d3748; font-weight: 600;"
+                                    class="cart-total">
+                                    ${{ number_format($item['price'] * $item['quantity'], 2) }}
+                                </td>
+                                <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">
+                                    <button onclick="removeFromCart({{ $id }})"
+                                        style="background-color: #f56565; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; border: none; cursor: pointer; font-size: 0.875rem; transition: background-color 0.2s;">
+                                        <i class="fas fa-trash-alt" style="margin-right: 0.5rem;"></i> Remove
+                                    </button>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </section>
+
+            <!-- Cart Summary -->
+            <div
+                style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; background-color: white; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
+                <div style="color: #2d3748; font-size: 1.25rem; font-weight: 600;">
+                    Total: $<span id="cart-total">{{ number_format($total, 2) }}</span>
+                </div>
+                <a href="{{ route('checkout') }}"
+                    style="background-color: #48bb78; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; text-decoration: none; display: inline-flex; align-items: center; transition: background-color 0.2s;">
+                    <i class="fas fa-credit-card" style="margin-right: 0.5rem;"></i> Proceed to Checkout
+                </a>
+            </div>
+        @else
+            <div
+                style="background-color: white; padding: 3rem; text-align: center; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
+                <i class="fas fa-shopping-cart" style="font-size: 3rem; color: #a0aec0; margin-bottom: 1rem;"></i>
+                <p style="color: #4a5568; margin-bottom: 1rem;">Your cart is empty.</p>
+                <a href="{{ route('shop') }}"
+                    style="background-color: #4299e1; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; text-decoration: none; display: inline-flex; align-items: center; transition: background-color 0.2s;">
+                    <i class="fas fa-store" style="margin-right: 0.5rem;"></i> Continue Shopping
+                </a>
+            </div>
+        @endif
+    </div>
+
+    @push('styles')
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    @endpush
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function updateCart(productId, quantity, isInput = false) {
+            let row = document.querySelector(`tr[data-id='${productId}']`);
+            let input = row.querySelector('.cart-qty');
+            let price = parseFloat(row.children[1].textContent.replace('$', ''));
+            let totalCell = row.querySelector('.cart-total');
+
+            let newQuantity = isInput ? quantity : parseInt(input.value) + quantity;
+            if (newQuantity < 1) return;
+
+            input.value = newQuantity;
+
+            fetch(`/cart/update/${productId}`, {
+                    method: "POST",
+                    headers: {
+                        "X-CSRF-TOKEN": "{{ csrf_token() }}",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        quantity: newQuantity
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    totalCell.textContent = `$${(price * newQuantity).toFixed(2)}`;
+                    document.getElementById('cart-total').textContent = data.newTotal.toFixed(2);
+                })
+                .catch(error => console.error("Error:", error));
+        }
+
+        function removeFromCart(productId) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "This item will be removed from your cart.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#f56565',
+                cancelButtonColor: '#718096',
+                confirmButtonText: 'Yes, remove it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    fetch(`/cart/remove/${productId}`, {
+                            method: "POST",
+                            headers: {
+                                "X-CSRF-TOKEN": "{{ csrf_token() }}",
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({})
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Removed!',
+                                text: data.message,
+                                timer: 1500,
+                                showConfirmButton: false
+                            }).then(() => location.reload());
+                        })
+                        .catch(error => console.error("Error:", error));
+                }
+            });
+        }
+    </script>
     <!-- cart end -->
     <!-- footer start -->
     @include('footer')
@@ -203,73 +238,7 @@
     <script src="vendor/slick/js/slick.js"></script> <!-- slick js -->
     <script src="vendor/range_slider/js/jquery-ui.min.js"></script> <!-- rang slider js -->
     <script src="assets/js/theme_one.js"></script> <!-- theme js -->
-    <!-- quantity count start -->
-    <script>
-        var QtyInput = (function() {
-            var $qtyInputs = $(".qty-input");
 
-            if (!$qtyInputs.length) {
-                return;
-            }
-
-            var $inputs = $qtyInputs.find(".product-qty");
-            var $countBtn = $qtyInputs.find(".qty-count");
-            var qtyMin = parseInt($inputs.attr("min"));
-            var qtyMax = parseInt($inputs.attr("max"));
-
-            $inputs.change(function() {
-                var $this = $(this);
-                var $minusBtn = $this.siblings(".qty-count--minus");
-                var $addBtn = $this.siblings(".qty-count--add");
-                var qty = parseInt($this.val());
-
-                if (isNaN(qty) || qty <= qtyMin) {
-                    $this.val(qtyMin);
-                    $minusBtn.attr("disabled", true);
-                } else {
-                    $minusBtn.attr("disabled", false);
-
-                    if (qty >= qtyMax) {
-                        $this.val(qtyMax);
-                        $addBtn.attr('disabled', true);
-                    } else {
-                        $this.val(qty);
-                        $addBtn.attr('disabled', false);
-                    }
-                }
-            });
-
-            $countBtn.click(function() {
-                var operator = this.dataset.action;
-                var $this = $(this);
-                var $input = $this.siblings(".product-qty");
-                var qty = parseInt($input.val());
-
-                if (operator == "add") {
-                    qty += 1;
-                    if (qty >= qtyMin + 1) {
-                        $this.siblings(".qty-count--minus").attr("disabled", false);
-                    }
-
-                    if (qty >= qtyMax) {
-                        $this.attr("disabled", true);
-                    }
-                } else {
-                    qty = qty <= qtyMin ? qtyMin : (qty -= 1);
-
-                    if (qty == qtyMin) {
-                        $this.attr("disabled", true);
-                    }
-
-                    if (qty < qtyMax) {
-                        $this.siblings(".qty-count--add").attr("disabled", false);
-                    }
-                }
-
-                $input.val(qty);
-            });
-        })();
-    </script>
 
 </body>
 
