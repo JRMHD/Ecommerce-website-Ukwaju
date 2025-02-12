@@ -38,6 +38,11 @@
                     <i class="fas fa-user w-5"></i>
                     <span class="ml-3">Profile</span>
                 </a>
+                <a href="{{ route('user.orders.index') }}"
+                    class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-shopping-bag w-5"></i>
+                    <span class="ml-3">My Orders</span>
+                </a>
             </div>
 
             <!-- Logout button in sidebar -->
@@ -137,6 +142,11 @@
                         class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
                         <i class="fas fa-user w-5"></i>
                         <span class="ml-3">Profile</span>
+                    </a>
+                    <a href="{{ route('user.orders.index') }}"
+                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-shopping-bag w-5"></i>
+                        <span class="ml-3">My Orders</span>
                     </a>
                 </nav>
 

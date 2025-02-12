@@ -4,7 +4,7 @@
            <div class="row">
                <div class="col-lg-4 col-md-4">
                    <ul class="top-bar-dtls">
-                       <li><a href="/contact" title="">Track Order</a></li>
+                       <li><a href="/my-orders" title="">Track Order</a></li>
                        <li><a href="/about-us" title="">About Us</a></li>
                        <li><a href="/contact" title="">Contact</a></li>
                        <li><a href="/faqs" title="">FAQ</a></li>

@@ -10,6 +10,9 @@ use App\Models\Product;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\WishlistController;
+use App\Http\Controllers\User\OrderController as UserOrderController;
+
+use App\Http\Controllers\Admin\OrderController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -53,6 +56,12 @@ Route::post('/contact/store', [ContactController::class, 'store'])->name('contac
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('products', ProductController::class);
+    Route::get('/orders', [OrderController::class, 'index'])->name('admin.orders.index');
+    Route::get('/orders/{id}', [OrderController::class, 'show'])->name('admin.orders.show');
+    Route::put('/orders/{id}', [OrderController::class, 'updateStatus'])->name('admin.orders.update');
+    Route::resource('/admin/orders', OrderController::class);
+    Route::put('/admin/orders/{id}/update-status', [OrderController::class, 'updateStatus'])->name('admin.orders.update');
+    Route::delete('/admin/orders/{id}', [OrderController::class, 'destroy'])->name('admin.orders.destroy');
 });
 
 
@@ -78,5 +87,11 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/wishlist/remove/{id}', [WishlistController::class, 'removeFromWishlist'])->name('wishlist.remove');
     Route::post('/wishlist/move-to-cart/{id}', [WishlistController::class, 'moveToCart'])->name('wishlist.moveToCart');
     Route::post('/wishlist/move-all-to-cart', [WishlistController::class, 'moveAllToCart'])->name('wishlist.moveAllToCart');
+    Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout');
+    Route::post('/save-address', [CartController::class, 'saveAddress'])->name('save.address');
+    Route::post('/checkout/process', [CartController::class, 'completeOrder'])->name('checkout.process');
+    Route::get('/order/success', [CartController::class, 'orderSuccess'])->name('order.success');
 
+    Route::get('/my-orders', [UserOrderController::class, 'index'])->name('user.orders.index');
+    Route::get('/my-orders/{id}', [UserOrderController::class, 'show'])->name('user.orders.show');
 });

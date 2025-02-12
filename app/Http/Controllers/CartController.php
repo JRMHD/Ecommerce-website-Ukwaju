@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
+use App\Models\ShippingAddress;
+use App\Models\Order;
+use App\Models\OrderItem;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\OrderPlacedMail;
 
 class CartController extends Controller
 {
@@ -73,5 +79,90 @@ class CartController extends Controller
             'message' => 'Cart updated successfully',
             'newTotal' => $total
         ]);
+    }
+
+    public function checkout()
+    {
+        $cart = Session::get('cart', []);
+        $total = array_sum(array_map(fn($item) => $item['price'] * $item['quantity'], $cart));
+
+        // Get the user's shipping address
+        $shippingAddress = ShippingAddress::where('user_id', Auth::id())->first();
+
+        return view('checkout', compact('cart', 'total', 'shippingAddress'));
+    }
+
+    public function saveAddress(Request $request)
+    {
+        $request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'address' => 'required',
+            'country' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+            'zip_code' => 'required',
+            'phone' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        $address = ShippingAddress::updateOrCreate(
+            ['user_id' => Auth::id()],
+            $request->all()
+        );
+
+        return redirect()->back()->with('success', 'Address saved successfully!');
+    }
+
+
+    public function completeOrder()
+    {
+        $cart = Session::get('cart', []);
+        if (empty($cart)) {
+            return redirect()->back()->with('error', 'Your cart is empty!');
+        }
+
+        $user = Auth::user();
+        $shippingAddress = ShippingAddress::where('user_id', $user->id)->first();
+
+        if (!$shippingAddress) {
+            return redirect()->back()->with('error', 'Please add a shipping address first.');
+        }
+
+        // Calculate total price
+        $totalPrice = array_sum(array_map(fn($item) => $item['price'] * $item['quantity'], $cart));
+
+        // Create order
+        $order = Order::create([
+            'user_id' => $user->id,
+            'total_price' => $totalPrice,
+            'status' => 'pending',
+            'shipping_address' => json_encode($shippingAddress), // Store as JSON
+        ]);
+
+        // Save order items
+        foreach ($cart as $id => $item) {
+            OrderItem::create([
+                'order_id' => $order->id,
+                'product_id' => $id,
+                'product_name' => $item['name'],
+                'product_price' => $item['price'],
+                'quantity' => $item['quantity'],
+                'product_image' => $item['image'],
+            ]);
+        }
+
+        // Send order confirmation email
+        Mail::to($user->email)->send(new OrderPlacedMail($order));
+
+        // Clear cart session
+        Session::forget('cart');
+
+        return redirect()->route('order.success')->with('success', 'Order placed successfully! A confirmation email has been sent.');
+    }
+
+    public function orderSuccess()
+    {
+        return view('checkout.success'); // Ensure you have this view file
     }
 }
