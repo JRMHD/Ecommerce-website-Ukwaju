@@ -245,29 +245,30 @@
                     </form>
                 </div>
 
-                <!-- Payment Method Selection -->
-                <div
-                    style="background-color: white; border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 24px; margin-bottom: 24px;">
-                    <h3 style="color: #2d3748; font-size: 1.5rem; margin-bottom: 24px; font-weight: 600;">Select
-                        Payment
-                        Method</h3>
-                    <select id="paymentMethod"
-                        style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem; color: #4a5568; background-color: white; cursor: pointer; margin-bottom: 24px;">
-                        <option value="Paypal">Paypal</option>
-                        <option value="Venmo">Venmo</option>
-                        <option value="Cashapp">Cashapp</option>
-                    </select>
-
-                    <!-- Checkout Form -->
-                    <form id="checkoutForm" action="{{ route('checkout.process') }}" method="POST">
-                        @csrf
-                        <input type="hidden" name="payment_method" id="selectedPaymentMethod">
-                        <button type="submit" id="completeOrder"
-                            style="background-color: #059669; color: white; padding: 14px 28px; border: none; border-radius: 6px; font-weight: 500; width: 100%; cursor: pointer; transition: background-color 0.2s;">
-                            Complete Order
-                        </button>
-                    </form>
+                <!-- Payment section with PayPal button -->
+                <div style="text-align: center; margin-top: 20px;">
+                    <p class="payment-info" style="margin-bottom: 15px;">
+                        Securely complete your purchase using PayPal
+                    </p>
+                    <button onclick="window.location.href='{{ route('checkout.paypal') }}'"
+                        style="background-color: white; 
+               color: #2C2E2F;
+               padding: 12px 30px;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+               font-size: 16px;
+               display: inline-flex;
+               align-items: center;
+               gap: 10px;">
+                        <img src="/assets/images/paypal payment.png" alt="PayPal" style="height: 20px;">
+                        Pay with PayPal
+                    </button>
+                    <p style="margin-top: 10px; font-size: 14px; color: #666;">
+                        You'll be redirected to PayPal to complete your payment securely
+                    </p>
                 </div>
+
             </div>
         </div>
     </section>

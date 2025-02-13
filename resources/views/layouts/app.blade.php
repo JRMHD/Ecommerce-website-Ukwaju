@@ -8,6 +8,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -23,7 +24,8 @@
     <!-- Sidebar for larger screens -->
     <div class="fixed hidden lg:flex flex-col w-64 h-screen bg-white border-r border-gray-200">
         <div class="flex items-center justify-center h-16 border-b border-gray-200">
-            <h1 class="text-xl font-bold text-gray-800">{{ config('app.name', 'Laravel') }}</h1>
+            <img src="{{ asset('assets/images/logo/01.png') }}" alt="{{ config('app.name', 'Laravel') }}"
+                class="h-10 object-contain">
         </div>
 
         <nav class="flex-1 overflow-y-auto p-4">
@@ -33,15 +35,17 @@
                     <i class="fas fa-home w-5"></i>
                     <span class="ml-3">Dashboard</span>
                 </a>
-                <a href="{{ route('profile.edit') }}"
-                    class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
-                    <i class="fas fa-user w-5"></i>
-                    <span class="ml-3">Profile</span>
-                </a>
+
                 <a href="{{ route('user.orders.index') }}"
                     class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
                     <i class="fas fa-shopping-bag w-5"></i>
                     <span class="ml-3">My Orders</span>
+                </a>
+
+                <a href="{{ route('profile.edit') }}"
+                    class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-user w-5"></i>
+                    <span class="ml-3">Profile</span>
                 </a>
             </div>
 
@@ -130,7 +134,8 @@
             <!-- Mobile sidebar content -->
             <div class="flex-1 h-full pt-5 pb-4 flex flex-col">
                 <div class="flex-shrink-0 flex items-center px-4 mb-5">
-                    <h1 class="text-xl font-bold text-gray-800">{{ config('app.name', 'Laravel') }}</h1>
+                    <img src="{{ asset('assets/images/logo/01.png') }}" alt="{{ config('app.name', 'Laravel') }}"
+                        class="h-8 w-auto object-contain">
                 </div>
                 <nav class="flex-1 px-4 space-y-2">
                     <a href="{{ route('dashboard') }}"

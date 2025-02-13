@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\AdminCustomerController;
 use App\Models\Product;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\CartController;
@@ -13,6 +14,7 @@ use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\User\OrderController as UserOrderController;
 
 use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -94,4 +96,14 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/my-orders', [UserOrderController::class, 'index'])->name('user.orders.index');
     Route::get('/my-orders/{id}', [UserOrderController::class, 'show'])->name('user.orders.show');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::get('/checkout/paypal', [CartController::class, 'paypalCheckout'])->name('checkout.paypal');
+    Route::get('/paypal/success', [CartController::class, 'paypalSuccess'])->name('paypal.success');
+    Route::get('/paypal/cancel', [CartController::class, 'paypalCancel'])->name('paypal.cancel');
 });
+
+
+
+Route::get('/admin/customers', [AdminCustomerController::class, 'index'])->name('admin.customers.index');
+Route::get('/admin/customers/export', [AdminCustomerController::class, 'export'])->name('admin.customers.export');

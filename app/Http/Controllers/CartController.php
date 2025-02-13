@@ -11,6 +11,7 @@ use App\Models\Order;
 use App\Models\OrderItem;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\OrderPlacedMail;
+use Srmklive\PayPal\Services\PayPal as PayPalClient;
 
 class CartController extends Controller
 {
@@ -164,5 +165,50 @@ class CartController extends Controller
     public function orderSuccess()
     {
         return view('checkout.success'); // Ensure you have this view file
+    }
+
+    public function paypalCheckout()
+    {
+        $cart = Session::get('cart', []);
+        if (empty($cart)) {
+            return redirect()->route('cart.index')->with('error', 'Your cart is empty!');
+        }
+
+        $totalPrice = array_sum(array_map(fn($item) => $item['price'] * $item['quantity'], $cart));
+
+        $provider = new PayPalClient();
+        $provider->setApiCredentials(config('paypal'));
+        $paypalToken = $provider->getAccessToken();
+
+        $response = $provider->createOrder([
+            "intent" => "CAPTURE",
+            "purchase_units" => [
+                [
+                    "amount" => [
+                        "currency_code" => "USD",
+                        "value" => $totalPrice
+                    ]
+                ]
+            ],
+            "application_context" => [
+                "return_url" => route('paypal.success'),
+                "cancel_url" => route('paypal.cancel')
+            ]
+        ]);
+
+        if (isset($response['id']) && $response['status'] == 'CREATED') {
+            foreach ($response['links'] as $link) {
+                if ($link['rel'] === 'approve') {
+                    return redirect()->away($link['href']);
+                }
+            }
+        }
+
+        return redirect()->route('cart.index')->with('error', 'Something went wrong!');
+    }
+
+    public function paypalCancel()
+    {
+        return redirect()->route('checkout')->with('error', 'You have canceled the PayPal payment.');
     }
 }
